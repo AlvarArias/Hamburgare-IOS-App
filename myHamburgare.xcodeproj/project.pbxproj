@@ -20,6 +20,9 @@
 		62AF67492768975D00FF564B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67482768975D00FF564B /* InfoViewController.swift */; };
 		62AF674B2768976C00FF564B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF674A2768976C00FF564B /* UserViewController.swift */; };
 		62AF674F27689F2F00FF564B /* DescritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF674E27689F2E00FF564B /* DescritionViewController.swift */; };
+		62AF67512768A65000FF564B /* Data Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67502768A65000FF564B /* Data Model.swift */; };
+		62AF67532768A66500FF564B /* Conector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67522768A66500FF564B /* Conector.swift */; };
+		62AF67572768A70F00FF564B /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 62AF67562768A70F00FF564B /* Notes.rtf */; };
 		94EF1415AAD03B2416218C28 /* Pods_myHamburgare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		62AF67482768975D00FF564B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		62AF674A2768976C00FF564B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		62AF674E27689F2E00FF564B /* DescritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescritionViewController.swift; sourceTree = "<group>"; };
+		62AF67502768A65000FF564B /* Data Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Model.swift"; sourceTree = "<group>"; };
+		62AF67522768A66500FF564B /* Conector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conector.swift; sourceTree = "<group>"; };
+		62AF67562768A70F00FF564B /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
 		7FB79569F1979530B621FFF5 /* Pods-myHamburgare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myHamburgare.release.xcconfig"; path = "Target Support Files/Pods-myHamburgare/Pods-myHamburgare.release.xcconfig"; sourceTree = "<group>"; };
 		A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myHamburgare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE99E87BA6E80CACC25E87EE /* Pods-myHamburgare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myHamburgare.debug.xcconfig"; path = "Target Support Files/Pods-myHamburgare/Pods-myHamburgare.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,10 +83,12 @@
 		62AF66EF276789A300FF564B /* myHamburgare */ = {
 			isa = PBXGroup;
 			children = (
+				62AF67562768A70F00FF564B /* Notes.rtf */,
 				62AF66F0276789A300FF564B /* AppDelegate.swift */,
 				62AF66F2276789A300FF564B /* SceneDelegate.swift */,
-				62AF66F6276789A300FF564B /* Main.storyboard */,
+				62AF67552768A69300FF564B /* Model */,
 				62AF674C2768977C00FF564B /* View Controller */,
+				62AF66F6276789A300FF564B /* Main.storyboard */,
 				62AF66FB276789A700FF564B /* LaunchScreen.storyboard */,
 				62AF66F9276789A700FF564B /* Assets.xcassets */,
 				62AF674D276897A100FF564B /* Lottie animations */,
@@ -109,6 +117,15 @@
 				62AF67082767DFE000FF564B /* samwich.json */,
 			);
 			path = "Lottie animations";
+			sourceTree = "<group>";
+		};
+		62AF67552768A69300FF564B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62AF67502768A65000FF564B /* Data Model.swift */,
+				62AF67522768A66500FF564B /* Conector.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		78346A0F50BD2E87C8218194 /* Pods */ = {
@@ -190,6 +207,7 @@
 			files = (
 				62AF67092767DFE000FF564B /* samwich.json in Resources */,
 				62AF67072767DEA000FF564B /* cafe.json in Resources */,
+				62AF67572768A70F00FF564B /* Notes.rtf in Resources */,
 				62AF66FD276789A700FF564B /* LaunchScreen.storyboard in Resources */,
 				62AF66FA276789A700FF564B /* Assets.xcassets in Resources */,
 				62AF66F8276789A300FF564B /* Main.storyboard in Resources */,
@@ -245,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AF67532768A66500FF564B /* Conector.swift in Sources */,
 				62AF674B2768976C00FF564B /* UserViewController.swift in Sources */,
 				62AF67472768972F00FF564B /* HomeViewController.swift in Sources */,
+				62AF67512768A65000FF564B /* Data Model.swift in Sources */,
 				62AF66F5276789A300FF564B /* ViewController.swift in Sources */,
 				62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */,
 				62AF674F27689F2F00FF564B /* DescritionViewController.swift in Sources */,
