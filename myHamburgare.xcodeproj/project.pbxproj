@@ -13,6 +13,13 @@
 		62AF66F8276789A300FF564B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF66F6276789A300FF564B /* Main.storyboard */; };
 		62AF66FA276789A700FF564B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62AF66F9276789A700FF564B /* Assets.xcassets */; };
 		62AF66FD276789A700FF564B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF66FB276789A700FF564B /* LaunchScreen.storyboard */; };
+		62AF67052767DD4400FF564B /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67042767DD4400FF564B /* LaunchViewController.swift */; };
+		62AF67072767DEA000FF564B /* cafe.json in Resources */ = {isa = PBXBuildFile; fileRef = 62AF67062767DEA000FF564B /* cafe.json */; };
+		62AF67092767DFE000FF564B /* samwich.json in Resources */ = {isa = PBXBuildFile; fileRef = 62AF67082767DFE000FF564B /* samwich.json */; };
+		62AF67472768972F00FF564B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67462768972F00FF564B /* HomeViewController.swift */; };
+		62AF67492768975D00FF564B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67482768975D00FF564B /* InfoViewController.swift */; };
+		62AF674B2768976C00FF564B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF674A2768976C00FF564B /* UserViewController.swift */; };
+		94EF1415AAD03B2416218C28 /* Pods_myHamburgare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,15 @@
 		62AF66F9276789A700FF564B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62AF66FC276789A700FF564B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62AF66FE276789A700FF564B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62AF67042767DD4400FF564B /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		62AF67062767DEA000FF564B /* cafe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cafe.json; sourceTree = "<group>"; };
+		62AF67082767DFE000FF564B /* samwich.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samwich.json; sourceTree = "<group>"; };
+		62AF67462768972F00FF564B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		62AF67482768975D00FF564B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		62AF674A2768976C00FF564B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		7FB79569F1979530B621FFF5 /* Pods-myHamburgare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myHamburgare.release.xcconfig"; path = "Target Support Files/Pods-myHamburgare/Pods-myHamburgare.release.xcconfig"; sourceTree = "<group>"; };
+		A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myHamburgare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE99E87BA6E80CACC25E87EE /* Pods-myHamburgare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myHamburgare.debug.xcconfig"; path = "Target Support Files/Pods-myHamburgare/Pods-myHamburgare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EF1415AAD03B2416218C28 /* Pods_myHamburgare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				62AF66EF276789A300FF564B /* myHamburgare */,
 				62AF66EE276789A300FF564B /* Products */,
+				78346A0F50BD2E87C8218194 /* Pods */,
+				C541D049D428C4F63A8499D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +77,52 @@
 			children = (
 				62AF66F0276789A300FF564B /* AppDelegate.swift */,
 				62AF66F2276789A300FF564B /* SceneDelegate.swift */,
-				62AF66F4276789A300FF564B /* ViewController.swift */,
 				62AF66F6276789A300FF564B /* Main.storyboard */,
-				62AF66F9276789A700FF564B /* Assets.xcassets */,
+				62AF674C2768977C00FF564B /* View Controller */,
 				62AF66FB276789A700FF564B /* LaunchScreen.storyboard */,
+				62AF66F9276789A700FF564B /* Assets.xcassets */,
+				62AF674D276897A100FF564B /* Lottie animations */,
 				62AF66FE276789A700FF564B /* Info.plist */,
 			);
 			path = myHamburgare;
+			sourceTree = "<group>";
+		};
+		62AF674C2768977C00FF564B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62AF66F4276789A300FF564B /* ViewController.swift */,
+				62AF67462768972F00FF564B /* HomeViewController.swift */,
+				62AF67482768975D00FF564B /* InfoViewController.swift */,
+				62AF674A2768976C00FF564B /* UserViewController.swift */,
+				62AF67042767DD4400FF564B /* LaunchViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		62AF674D276897A100FF564B /* Lottie animations */ = {
+			isa = PBXGroup;
+			children = (
+				62AF67062767DEA000FF564B /* cafe.json */,
+				62AF67082767DFE000FF564B /* samwich.json */,
+			);
+			path = "Lottie animations";
+			sourceTree = "<group>";
+		};
+		78346A0F50BD2E87C8218194 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE99E87BA6E80CACC25E87EE /* Pods-myHamburgare.debug.xcconfig */,
+				7FB79569F1979530B621FFF5 /* Pods-myHamburgare.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C541D049D428C4F63A8499D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62AF6701276789A700FF564B /* Build configuration list for PBXNativeTarget "myHamburgare" */;
 			buildPhases = (
+				9995B07A3AC2D724D247A5F7 /* [CP] Check Pods Manifest.lock */,
 				62AF66E9276789A300FF564B /* Sources */,
 				62AF66EA276789A300FF564B /* Frameworks */,
 				62AF66EB276789A300FF564B /* Resources */,
+				6404E9895173AEF7E1822333 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AF67092767DFE000FF564B /* samwich.json in Resources */,
+				62AF67072767DEA000FF564B /* cafe.json in Resources */,
 				62AF66FD276789A700FF564B /* LaunchScreen.storyboard in Resources */,
 				62AF66FA276789A700FF564B /* Assets.xcassets in Resources */,
 				62AF66F8276789A300FF564B /* Main.storyboard in Resources */,
@@ -133,14 +195,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6404E9895173AEF7E1822333 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myHamburgare/Pods-myHamburgare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myHamburgare/Pods-myHamburgare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myHamburgare/Pods-myHamburgare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9995B07A3AC2D724D247A5F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myHamburgare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		62AF66E9276789A300FF564B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AF674B2768976C00FF564B /* UserViewController.swift in Sources */,
+				62AF67472768972F00FF564B /* HomeViewController.swift in Sources */,
 				62AF66F5276789A300FF564B /* ViewController.swift in Sources */,
 				62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */,
 				62AF66F3276789A300FF564B /* SceneDelegate.swift in Sources */,
+				62AF67492768975D00FF564B /* InfoViewController.swift in Sources */,
+				62AF67052767DD4400FF564B /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +392,7 @@
 		};
 		62AF6702276789A700FF564B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE99E87BA6E80CACC25E87EE /* Pods-myHamburgare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +421,7 @@
 		};
 		62AF6703276789A700FF564B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB79569F1979530B621FFF5 /* Pods-myHamburgare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
