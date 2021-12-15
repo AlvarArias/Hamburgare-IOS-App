@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1091368587798-q87aagso3tbcdhbonai8kkd53viftt23.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1091368587798-q87aagso3tbcdhbonai8kkd53viftt23</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDH6N4dtdPcgzUPK7WaHeWbYUebdHAYRbg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1091368587798</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>se.alvararias.myHamburgare</string>
+	<key>PROJECT_ID</key>
+	<string>piax-3136a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>piax-3136a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1091368587798:ios:3c90143b7f555a070a9b37</string>
+	<key>DATABASE_URL</key>
+	<string>https://piax-3136a-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>

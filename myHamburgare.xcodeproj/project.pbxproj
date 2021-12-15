@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6297891C2769FC0F00643D50 /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297891B2769FC0F00643D50 /* homeCollectionViewCell.swift */; };
+		6297891E2769FF3600643D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6297891D2769FF3600643D50 /* GoogleService-Info.plist */; };
 		62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF66F0276789A300FF564B /* AppDelegate.swift */; };
 		62AF66F3276789A300FF564B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF66F2276789A300FF564B /* SceneDelegate.swift */; };
 		62AF66F5276789A300FF564B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF66F4276789A300FF564B /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		6297891B2769FC0F00643D50 /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
+		6297891D2769FF3600643D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62AF66ED276789A300FF564B /* myHamburgare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myHamburgare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AF66F0276789A300FF564B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62AF66F2276789A300FF564B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				62AF66F9276789A700FF564B /* Assets.xcassets */,
 				62AF674D276897A100FF564B /* Lottie animations */,
 				62AF66FE276789A700FF564B /* Info.plist */,
+				6297891D2769FF3600643D50 /* GoogleService-Info.plist */,
 			);
 			path = myHamburgare;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				62AF66FD276789A700FF564B /* LaunchScreen.storyboard in Resources */,
 				62AF66FA276789A700FF564B /* Assets.xcassets in Resources */,
 				62AF66F8276789A300FF564B /* Main.storyboard in Resources */,
+				6297891E2769FF3600643D50 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
