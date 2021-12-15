@@ -156,6 +156,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="Boton Favorite"/>
+                                        <connections>
+                                            <action selector="favoriteButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="Raj-79-Rbm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v9-8Z-Y6P">
                                         <rect key="frame" x="159" y="14" width="138" height="136"/>
@@ -163,6 +166,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="Boton Popular"/>
+                                        <connections>
+                                            <action selector="popularButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="hnn-Ey-qj1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYw-my-2Bp">
                                         <rect key="frame" x="10" y="153" width="133" height="140"/>
@@ -170,6 +176,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="Boton Tips"/>
+                                        <connections>
+                                            <action selector="tipsButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="Ixv-uv-cyr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpO-YS-K0I">
                                         <rect key="frame" x="159" y="158" width="138" height="129"/>
@@ -177,6 +186,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="Boton New"/>
+                                        <connections>
+                                            <action selector="newButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="c44-2h-R9a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Color Celeste"/>
@@ -192,21 +204,34 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ehG-Zg-DOb">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ehG-Zg-DOb" customClass="homeCollectionViewCell" customModule="myHamburgare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="feb-Cr-ezt">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-jC-J42">
+                                                    <rect key="frame" x="8" y="4" width="120" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ffp-Wf-BZa" id="NqU-T6-UgU"/>
+                                    <outlet property="delegate" destination="Ffp-Wf-BZa" id="BNr-QO-iuR"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zYT-uh-LSG"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="ros-0N-Rcy"/>
+                    <connections>
+                        <outlet property="homeSliderView" destination="bkT-lU-PEN" id="M1i-Gv-kom"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJl-BC-Wxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,6 +273,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                        <connections>
+                                            <action selector="shareRecep:" destination="4fg-8B-jWj" eventType="touchUpInside" id="700-70-oct"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Color Rosado"/>
@@ -265,6 +293,14 @@
                         <viewLayoutGuide key="safeArea" id="uhX-gi-zQb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonShareDesc" destination="PuV-El-zqp" id="VkJ-7N-HBv"/>
+                        <outlet property="imgCenterShareBar" destination="AAz-Mk-RUC" id="XoZ-Aq-75E"/>
+                        <outlet property="imgDescrip" destination="vxL-7u-oHa" id="pIf-MR-0ZI"/>
+                        <outlet property="imgLeftShareBar" destination="TKk-8f-rzc" id="R5o-jw-HmK"/>
+                        <outlet property="nameHamDescrip" destination="9Fk-xj-AwP" id="FdO-KG-lHX"/>
+                        <outlet property="receptTextDesc" destination="ugD-ee-zoR" id="YeI-dh-sIY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-ZF-78R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -308,6 +344,9 @@
             <point key="canvasLocation" x="-126.08695652173914" y="91.741071428571431"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="E6B-A5-8dv"/>
+    </designables>
     <resources>
         <image name="Boton Favorite" width="118" height="114"/>
         <image name="Boton New" width="118" height="114"/>
@@ -317,7 +356,7 @@
         <image name="Recipes" width="293" height="66"/>
         <image name="Recipes-1" width="230" height="40"/>
         <namedColor name="Amarillo">
-            <color red="0.99215686274509807" green="0.96078431372549022" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.99199998378753662" green="0.96100002527236938" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Color Amarillo">
             <color red="0.99215686274509807" green="0.96078431372549022" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
