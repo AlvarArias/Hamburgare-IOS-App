@@ -9,6 +9,18 @@ import UIKit
 
 class DescritionViewController: UIViewController {
 
+    @IBOutlet weak var imgDescrip: UIImageView!
+    
+    @IBOutlet weak var nameHamDescrip: UILabel!
+    
+    @IBOutlet weak var imgLeftShareBar: UIImageView!
+    
+    @IBOutlet weak var buttonShareDesc: UIButton!
+    
+    @IBOutlet weak var imgCenterShareBar: UIImageView!
+    
+    @IBOutlet weak var receptTextDesc: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +28,10 @@ class DescritionViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func shareRecep(_ sender: Any) {
+        // Activare share action
+        
     }
-    */
+    
 
 }
