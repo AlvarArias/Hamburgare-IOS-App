@@ -11,14 +11,14 @@ import Lottie
 
 class LaunchViewController: UIViewController {
 
-    @IBOutlet weak var animationView: AnimationView!
+   @IBOutlet weak var animationView: AnimationView!
     
     @IBOutlet weak var startButton: AnimationView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Lottie animation
+        //Lottie.animation
         animationView!.loopMode = .loop
         animationView!.animationSpeed = 0.6
         animationView!.play()
@@ -43,6 +43,7 @@ class LaunchViewController: UIViewController {
 
 }
 
+/*
 extension UIView {
   func fadeTo(_ alpha: CGFloat, duration: TimeInterval = 0.3) {
     DispatchQueue.main.async {
@@ -60,3 +61,4 @@ extension UIView {
     fadeTo(0.0, duration: duration)
   }
 }
+*/

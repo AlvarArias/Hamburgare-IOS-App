@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UICollectionViewController {
+class HomeViewController: ViewController {
 
     @IBOutlet weak var homeSliderView: UICollectionView!
     
