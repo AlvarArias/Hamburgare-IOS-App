@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6297891C2769FC0F00643D50 /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297891B2769FC0F00643D50 /* homeCollectionViewCell.swift */; };
 		6297891E2769FF3600643D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6297891D2769FF3600643D50 /* GoogleService-Info.plist */; };
-		62978920276C9B2C00643D50 /* Home2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297891F276C9B2C00643D50 /* Home2ViewController.swift */; };
 		62978922276CA11C00643D50 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978921276CA11C00643D50 /* Petitions.swift */; };
 		62978924276CA12B00643D50 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978923276CA12B00643D50 /* Petition.swift */; };
 		62978926276CA26F00643D50 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978925276CA26F00643D50 /* TabViewController.swift */; };
@@ -23,19 +21,13 @@
 		62AF67072767DEA000FF564B /* cafe.json in Resources */ = {isa = PBXBuildFile; fileRef = 62AF67062767DEA000FF564B /* cafe.json */; };
 		62AF67092767DFE000FF564B /* samwich.json in Resources */ = {isa = PBXBuildFile; fileRef = 62AF67082767DFE000FF564B /* samwich.json */; };
 		62AF67472768972F00FF564B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67462768972F00FF564B /* HomeViewController.swift */; };
-		62AF67492768975D00FF564B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67482768975D00FF564B /* InfoViewController.swift */; };
-		62AF674B2768976C00FF564B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF674A2768976C00FF564B /* UserViewController.swift */; };
 		62AF674F27689F2F00FF564B /* DescritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF674E27689F2E00FF564B /* DescritionViewController.swift */; };
-		62AF67512768A65000FF564B /* Data Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67502768A65000FF564B /* Data Model.swift */; };
-		62AF67532768A66500FF564B /* Conector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67522768A66500FF564B /* Conector.swift */; };
 		62AF67572768A70F00FF564B /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 62AF67562768A70F00FF564B /* Notes.rtf */; };
 		94EF1415AAD03B2416218C28 /* Pods_myHamburgare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6297891B2769FC0F00643D50 /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
 		6297891D2769FF3600643D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6297891F276C9B2C00643D50 /* Home2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2ViewController.swift; sourceTree = "<group>"; };
 		62978921276CA11C00643D50 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
 		62978923276CA12B00643D50 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
 		62978925276CA26F00643D50 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
@@ -51,11 +43,7 @@
 		62AF67062767DEA000FF564B /* cafe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cafe.json; sourceTree = "<group>"; };
 		62AF67082767DFE000FF564B /* samwich.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samwich.json; sourceTree = "<group>"; };
 		62AF67462768972F00FF564B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		62AF67482768975D00FF564B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		62AF674A2768976C00FF564B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		62AF674E27689F2E00FF564B /* DescritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescritionViewController.swift; sourceTree = "<group>"; };
-		62AF67502768A65000FF564B /* Data Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Model.swift"; sourceTree = "<group>"; };
-		62AF67522768A66500FF564B /* Conector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conector.swift; sourceTree = "<group>"; };
 		62AF67562768A70F00FF564B /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
 		7FB79569F1979530B621FFF5 /* Pods-myHamburgare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myHamburgare.release.xcconfig"; path = "Target Support Files/Pods-myHamburgare/Pods-myHamburgare.release.xcconfig"; sourceTree = "<group>"; };
 		A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myHamburgare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,14 +101,10 @@
 		62AF674C2768977C00FF564B /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6297891B2769FC0F00643D50 /* homeCollectionViewCell.swift */,
-				62AF674E27689F2E00FF564B /* DescritionViewController.swift */,
 				62AF66F4276789A300FF564B /* ViewController.swift */,
-				62AF67462768972F00FF564B /* HomeViewController.swift */,
-				62AF67482768975D00FF564B /* InfoViewController.swift */,
-				62AF674A2768976C00FF564B /* UserViewController.swift */,
 				62AF67042767DD4400FF564B /* LaunchViewController.swift */,
-				6297891F276C9B2C00643D50 /* Home2ViewController.swift */,
+				62AF674E27689F2E00FF564B /* DescritionViewController.swift */,
+				62AF67462768972F00FF564B /* HomeViewController.swift */,
 				62978925276CA26F00643D50 /* TabViewController.swift */,
 			);
 			path = "View Controller";
@@ -138,8 +122,6 @@
 		62AF67552768A69300FF564B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				62AF67502768A65000FF564B /* Data Model.swift */,
-				62AF67522768A66500FF564B /* Conector.swift */,
 				62978921276CA11C00643D50 /* Petitions.swift */,
 				62978923276CA12B00643D50 /* Petition.swift */,
 			);
@@ -282,20 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62AF67532768A66500FF564B /* Conector.swift in Sources */,
 				62978922276CA11C00643D50 /* Petitions.swift in Sources */,
-				62AF674B2768976C00FF564B /* UserViewController.swift in Sources */,
 				62978926276CA26F00643D50 /* TabViewController.swift in Sources */,
 				62AF67472768972F00FF564B /* HomeViewController.swift in Sources */,
-				62AF67512768A65000FF564B /* Data Model.swift in Sources */,
 				62AF66F5276789A300FF564B /* ViewController.swift in Sources */,
-				6297891C2769FC0F00643D50 /* homeCollectionViewCell.swift in Sources */,
 				62978924276CA12B00643D50 /* Petition.swift in Sources */,
-				62978920276C9B2C00643D50 /* Home2ViewController.swift in Sources */,
 				62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */,
 				62AF674F27689F2F00FF564B /* DescritionViewController.swift in Sources */,
 				62AF66F3276789A300FF564B /* SceneDelegate.swift in Sources */,
-				62AF67492768975D00FF564B /* InfoViewController.swift in Sources */,
 				62AF67052767DD4400FF564B /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

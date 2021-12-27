@@ -40,9 +40,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="vRJ-wv-o9d" kind="show" id="1J9-cA-dLU"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-A5-8dv" customClass="AnimationView" customModule="Lottie">
                                 <rect key="frame" x="7" y="248" width="400" height="400"/>
@@ -79,7 +76,7 @@
             <objects>
                 <viewController id="45G-vJ-f3r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNe-88-2uG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="jKo-v0-dKy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -141,7 +138,7 @@
             <objects>
                 <viewController id="Ffp-Wf-BZa" customClass="HomeViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ihK-b8-hP9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-mw-uWy">
@@ -164,7 +161,7 @@
                                 <color key="backgroundColor" name="Amarillo"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-bk-QJ2">
-                                <rect key="frame" x="47" y="443" width="329" height="301"/>
+                                <rect key="frame" x="43" y="673" width="329" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URW-r3-Zv6">
@@ -187,29 +184,24 @@
                                             <action selector="popularButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="hnn-Ey-qj1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYw-my-2Bp">
-                                        <rect key="frame" x="10" y="153" width="133" height="140"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="Boton Tips"/>
-                                        <connections>
-                                            <action selector="tipsButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="Ixv-uv-cyr"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpO-YS-K0I">
-                                        <rect key="frame" x="159" y="158" width="138" height="129"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="Boton New"/>
-                                        <connections>
-                                            <action selector="newButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="c44-2h-R9a"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Color Celeste"/>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wFN-WE-uTj">
+                                <rect key="frame" x="87" y="226" width="240" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="07j-As-0j2">
+                                        <rect key="frame" x="0.0" y="44.5" width="240" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="07j-As-0j2" id="wHp-7p-zs0">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zYT-uh-LSG"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJl-BC-Wxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2509" y="-122"/>
+            <point key="canvasLocation" x="1845" y="92"/>
         </scene>
         <!--Descrition View Controller-->
         <scene sceneID="O6q-ed-obq">
@@ -287,26 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-ZF-78R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3305.7971014492755" y="-70.3125"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="aGt-vS-9OC">
-            <objects>
-                <tabBarController id="vRJ-wv-o9d" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="gpp-54-1xt"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NEa-Bc-Qtf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Ffp-Wf-BZa" kind="relationship" relationship="viewControllers" id="PUJ-OC-wi6"/>
-                        <segue destination="45G-vJ-f3r" kind="relationship" relationship="viewControllers" id="Cem-cl-FRU"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lHD-9W-Yfl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1597.1014492753625" y="91.741071428571431"/>
+            <point key="canvasLocation" x="2741" y="108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sTj-tS-KDX">
@@ -332,9 +305,7 @@
     </designables>
     <resources>
         <image name="Boton Favorite" width="118" height="114"/>
-        <image name="Boton New" width="118" height="114"/>
         <image name="Boton Popular" width="118" height="114"/>
-        <image name="Boton Tips" width="118" height="114"/>
         <image name="Hamburg-logo" width="195" height="154"/>
         <image name="Recipes" width="293" height="66"/>
         <image name="Recipes-1" width="230" height="40"/>

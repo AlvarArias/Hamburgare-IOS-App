@@ -7,9 +7,10 @@
 
 import UIKit
 
+// new home 
 class HomeViewController: ViewController {
 
-    @IBOutlet weak var homeSliderView: UICollectionView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +28,7 @@ class HomeViewController: ViewController {
     @IBAction func popularButtClick(_ sender: Any) {
     }
     
-    @IBAction func tipsButtClick(_ sender: Any) {
-    }
     
-    @IBAction func newButtClick(_ sender: Any) {
-    }
-    
-
 }
 
 
