@@ -11,6 +11,7 @@ import UIKit
 class TabViewController: UITableViewController {
         
         var petitions = [Petition]()
+    var myName: String = ""
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -71,5 +72,18 @@ class TabViewController: UITableViewController {
             return cell
             
         }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "DescritionViewController") as? DescritionViewController {
+
+            vc.detailHamburgName = petitions[indexPath.row].name
+            vc.detailHamburgText = petitions[indexPath.row].description
+            
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
+    
+    
+    
+}

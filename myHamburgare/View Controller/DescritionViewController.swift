@@ -8,6 +8,9 @@
 import UIKit
 
 class DescritionViewController: UIViewController {
+    
+    var detailHamburgName = ""
+    var detailHamburgText = ""
 
     @IBOutlet weak var imgDescrip: UIImageView!
     
@@ -25,6 +28,9 @@ class DescritionViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        nameHamDescrip.text = detailHamburgName
+        receptTextDesc.text = detailHamburgText
+        print("detail value = \(detailHamburgName)")
     }
     
 

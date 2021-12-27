@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        // change navigation item title color
+        var navigationBarAppearace = UINavigationBar.appearance()
+
+        navigationBarAppearace.tintColor = UIColor.red
+        //navigationBarAppearace.barTintColor = UIColor.red
+
+        // change navigation item title color
+        //navigationBarAppearace.titleTextAttributes =
+        
+        
         return true
     }
 

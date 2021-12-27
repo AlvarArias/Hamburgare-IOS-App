@@ -71,30 +71,14 @@
             </objects>
             <point key="canvasLocation" x="784.05797101449286" y="91.741071428571431"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="LZM-uG-0WV">
-            <objects>
-                <viewController id="45G-vJ-f3r" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yNe-88-2uG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jKo-v0-dKy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="tod-ic-9tc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vh9-fY-fsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3957" y="660"/>
-        </scene>
-        <!--Tab View Controller-->
+        <!--Hamburger-->
         <scene sceneID="gb9-84-SUa">
             <objects>
                 <tableViewController id="ykm-z0-qNM" customClass="TabViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="h7n-ir-k1K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.87861273939999995" blue="0.76114369049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="8tY-Zc-atM" detailTextLabel="u6h-OG-e5T" style="IBUITableViewCellStyleSubtitle" id="Zi9-GZ-mgy">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -127,11 +111,11 @@
                             <outlet property="delegate" destination="ykm-z0-qNM" id="jQg-Oa-MK2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rPG-CS-F3g"/>
+                    <navigationItem key="navigationItem" title="Hamburger" id="rPG-CS-F3g"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyO-ap-b52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2755.072463768116" y="944.19642857142856"/>
+            <point key="canvasLocation" x="2725" y="769"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Zqr-xE-WzO">
@@ -215,7 +199,7 @@
         <!--Descrition View Controller-->
         <scene sceneID="O6q-ed-obq">
             <objects>
-                <viewController id="4fg-8B-jWj" customClass="DescritionViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DescritionViewController" storyboardIdentifier="DescritionViewController" id="4fg-8B-jWj" customClass="DescritionViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MZl-qc-WGw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,8 +250,9 @@
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhX-gi-zQb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WiK-DS-xhT"/>
                     <connections>
                         <outlet property="buttonShareDesc" destination="PuV-El-zqp" id="VkJ-7N-HBv"/>
                         <outlet property="imgCenterShareBar" destination="AAz-Mk-RUC" id="XoZ-Aq-75E"/>
@@ -279,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-ZF-78R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2741" y="108"/>
+            <point key="canvasLocation" x="3554" y="747"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sTj-tS-KDX">
@@ -289,6 +274,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="I1C-ZN-KkM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
