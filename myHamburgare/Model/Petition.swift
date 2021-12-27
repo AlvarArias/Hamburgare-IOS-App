@@ -10,5 +10,6 @@ import Foundation
 struct Petition: Codable {
     var name: String
     var description: String
+    var image: String
 }
 

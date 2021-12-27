@@ -11,6 +11,7 @@ class DescritionViewController: UIViewController {
     
     var detailHamburgName = ""
     var detailHamburgText = ""
+    var urlSelectedImag = ""
 
     @IBOutlet weak var imgDescrip: UIImageView!
     
@@ -31,6 +32,14 @@ class DescritionViewController: UIViewController {
         nameHamDescrip.text = detailHamburgName
         receptTextDesc.text = detailHamburgText
         print("detail value = \(detailHamburgName)")
+   
+        let myURL = URL(string: urlSelectedImag)
+        print(myURL)
+        if (myURL != nil) {
+            imgDescrip.load(url: myURL!)
+        }
+        
+   
     }
     
 
@@ -40,4 +49,18 @@ class DescritionViewController: UIViewController {
     }
     
 
+}
+
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }

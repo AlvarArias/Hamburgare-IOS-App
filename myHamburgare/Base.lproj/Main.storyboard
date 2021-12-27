@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZd-Dq-YVK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kYq-tx-VCe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -40,6 +40,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ffp-Wf-BZa" kind="show" id="v7Z-M9-5Mn"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-A5-8dv" customClass="AnimationView" customModule="Lottie">
                                 <rect key="frame" x="7" y="248" width="400" height="400"/>
@@ -69,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784.05797101449286" y="91.741071428571431"/>
+            <point key="canvasLocation" x="2604.3478260869565" y="91.741071428571431"/>
         </scene>
         <!--Hamburger-->
         <scene sceneID="gb9-84-SUa">
@@ -80,30 +83,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="8tY-Zc-atM" detailTextLabel="u6h-OG-e5T" style="IBUITableViewCellStyleSubtitle" id="Zi9-GZ-mgy">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="Atd-pW-Xfd" detailTextLabel="Ehf-FT-OWR" imageView="EqE-lX-m7Z" rowHeight="113" style="IBUITableViewCellStyleSubtitle" id="Zi9-GZ-mgy" customClass="myTableViewCell" customModule="myHamburgare" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zi9-GZ-mgy" id="eO2-uJ-UJr">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8tY-Zc-atM">
-                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Atd-pW-Xfd">
+                                            <rect key="frame" x="83" y="41" width="25" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u6h-OG-e5T">
-                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ehf-FT-OWR">
+                                            <rect key="frame" x="83" y="57.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-fire-48" id="EqE-lX-m7Z">
+                                            <rect key="frame" x="20" y="32.5" width="48" height="48"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="myHambImg" destination="eO2-uJ-UJr" id="hf9-Jh-37i"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -115,7 +125,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyO-ap-b52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2725" y="769"/>
+            <point key="canvasLocation" x="3288" y="855"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Zqr-xE-WzO">
@@ -166,6 +176,7 @@
                                         <buttonConfiguration key="configuration" style="filled" image="Boton Popular"/>
                                         <connections>
                                             <action selector="popularButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="hnn-Ey-qj1"/>
+                                            <segue destination="ykm-z0-qNM" kind="show" id="lKE-7Q-OSx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -191,10 +202,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="ros-0N-Rcy"/>
+                    <navigationItem key="navigationItem" id="3xo-us-mVu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJl-BC-Wxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845" y="92"/>
+            <point key="canvasLocation" x="3665.217391304348" y="91.741071428571431"/>
         </scene>
         <!--Descrition View Controller-->
         <scene sceneID="O6q-ed-obq">
@@ -264,13 +276,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-ZF-78R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3554" y="747"/>
+            <point key="canvasLocation" x="4138" y="814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sTj-tS-KDX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IZd-Dq-YVK" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="aLU-1j-sQE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="I1C-ZN-KkM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -288,16 +301,38 @@
             </objects>
             <point key="canvasLocation" x="1844.9275362318842" y="943.52678571428567"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H0u-Hz-vJI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kYq-tx-VCe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7mf-ws-4Ga">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LG9-VL-PTm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtw-T4-0Sd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694.2028985507247" y="91.741071428571431"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="E6B-A5-8dv"/>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="lKE-7Q-OSx"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Boton Favorite" width="118" height="114"/>
         <image name="Boton Popular" width="118" height="114"/>
         <image name="Hamburg-logo" width="195" height="154"/>
         <image name="Recipes" width="293" height="66"/>
         <image name="Recipes-1" width="230" height="40"/>
+        <image name="icons8-fire-48" width="48" height="48"/>
         <namedColor name="Amarillo">
             <color red="0.99199998378753662" green="0.96100002527236938" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
