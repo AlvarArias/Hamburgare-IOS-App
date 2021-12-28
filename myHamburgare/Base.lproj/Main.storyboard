@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kYq-tx-VCe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZd-Dq-YVK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="Atd-pW-Xfd" detailTextLabel="Ehf-FT-OWR" imageView="EqE-lX-m7Z" rowHeight="113" style="IBUITableViewCellStyleSubtitle" id="Zi9-GZ-mgy" customClass="myTableViewCell" customModule="myHamburgare" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="Atd-pW-Xfd" imageView="EqE-lX-m7Z" rowHeight="113" style="IBUITableViewCellStyleDefault" id="Zi9-GZ-mgy" customClass="myTableViewCell" customModule="myHamburgare" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zi9-GZ-mgy" id="eO2-uJ-UJr">
@@ -91,26 +91,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Atd-pW-Xfd">
-                                            <rect key="frame" x="83" y="41" width="25" height="14.5"/>
+                                            <rect key="frame" x="83" y="0.0" width="293.5" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ehf-FT-OWR">
-                                            <rect key="frame" x="83" y="57.5" width="40.5" height="13.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-fire-48" id="EqE-lX-m7Z">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-star-144" id="EqE-lX-m7Z">
                                             <rect key="frame" x="20" y="32.5" width="48" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="myHambImg" destination="eO2-uJ-UJr" id="hf9-Jh-37i"/>
                                 </connections>
@@ -176,7 +169,6 @@
                                         <buttonConfiguration key="configuration" style="filled" image="Boton Popular"/>
                                         <connections>
                                             <action selector="popularButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="hnn-Ey-qj1"/>
-                                            <segue destination="ykm-z0-qNM" kind="show" id="lKE-7Q-OSx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -228,31 +220,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-py-lV0">
-                                <rect key="frame" x="50" y="462" width="315" height="77"/>
+                                <rect key="frame" x="20" y="462" width="384" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-8f-rzc">
-                                        <rect key="frame" x="36" y="8" width="61" height="62"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-fire-48" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-8f-rzc">
+                                        <rect key="frame" x="0.0" y="7" width="47" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAz-Mk-RUC">
-                                        <rect key="frame" x="140" y="7" width="61" height="62"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-ye-CbQ">
+                                        <rect key="frame" x="55" y="22" width="126" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-xF-gta">
+                                        <rect key="frame" x="258" y="22" width="118" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-time-40" translatesAutoresizingMaskIntoConstraints="NO" id="AAz-Mk-RUC">
+                                        <rect key="frame" x="189" y="13" width="51" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-El-zqp">
-                                        <rect key="frame" x="210" y="23" width="97" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Share"/>
-                                        <connections>
-                                            <action selector="shareRecep:" destination="4fg-8B-jWj" eventType="touchUpInside" id="700-70-oct"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" name="Color Rosado"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-ee-zoR">
-                                <rect key="frame" x="43" y="570" width="304" height="237"/>
+                                <rect key="frame" x="43" y="570" width="304" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -260,6 +257,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-8q-6yl">
+                                <rect key="frame" x="43" y="779" width="125" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ingredienser"/>
+                                <connections>
+                                    <action selector="buttIngred:" destination="4fg-8B-jWj" eventType="touchUpInside" id="8EQ-87-mp9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-El-zqp">
+                                <rect key="frame" x="214" y="779" width="133" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gör så här"/>
+                                <connections>
+                                    <action selector="shareRecep:" destination="4fg-8B-jWj" eventType="touchUpInside" id="700-70-oct"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhX-gi-zQb"/>
                         <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -270,13 +285,15 @@
                         <outlet property="imgCenterShareBar" destination="AAz-Mk-RUC" id="XoZ-Aq-75E"/>
                         <outlet property="imgDescrip" destination="vxL-7u-oHa" id="pIf-MR-0ZI"/>
                         <outlet property="imgLeftShareBar" destination="TKk-8f-rzc" id="R5o-jw-HmK"/>
+                        <outlet property="labCalories" destination="F5R-ye-CbQ" id="hk7-hx-jM9"/>
+                        <outlet property="labTime" destination="Vu0-xF-gta" id="61X-Dy-qP7"/>
                         <outlet property="nameHamDescrip" destination="9Fk-xj-AwP" id="FdO-KG-lHX"/>
                         <outlet property="receptTextDesc" destination="ugD-ee-zoR" id="YeI-dh-sIY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-ZF-78R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4138" y="814"/>
+            <point key="canvasLocation" x="4137.68115942029" y="813.61607142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sTj-tS-KDX">
@@ -323,9 +340,6 @@
     <designables>
         <designable name="E6B-A5-8dv"/>
     </designables>
-    <inferredMetricsTieBreakers>
-        <segue reference="lKE-7Q-OSx"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Boton Favorite" width="118" height="114"/>
         <image name="Boton Popular" width="118" height="114"/>
@@ -333,6 +347,8 @@
         <image name="Recipes" width="293" height="66"/>
         <image name="Recipes-1" width="230" height="40"/>
         <image name="icons8-fire-48" width="48" height="48"/>
+        <image name="icons8-star-144" width="48" height="48"/>
+        <image name="icons8-time-40" width="40" height="40"/>
         <namedColor name="Amarillo">
             <color red="0.99199998378753662" green="0.96100002527236938" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -341,9 +357,6 @@
         </namedColor>
         <namedColor name="Color Naranja">
             <color red="0.97254901960784312" green="0.74901960784313726" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Color Rosado">
-            <color red="0.99607843137254903" green="0.89803921568627454" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

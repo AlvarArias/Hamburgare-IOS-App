@@ -50,6 +50,10 @@ class TabViewController: UITableViewController {
 
             vc.detailHamburgName = petitions[indexPath.row].name
             vc.detailHamburgText = petitions[indexPath.row].description
+            vc.calorias = petitions[indexPath.row].calories
+            vc.tiempo = petitions[indexPath.row].time
+            vc.listIngredients = petitions[indexPath.row].ingredients
+            vc.preparations = petitions[indexPath.row].preparation
             vc.urlSelectedImag = petitions[indexPath.row].image
             
             navigationController?.pushViewController(vc, animated: true)
@@ -59,7 +63,9 @@ class TabViewController: UITableViewController {
     
     @objc func fechJSON() {
     let urlString: String
-        urlString = "https://firebasestorage.googleapis.com/v0/b/piax-3136a.appspot.com/o/testJSON%20Hamburg.json?alt=media&token=7d7cb05c-22ff-4b2f-aff1-1c28175e0792"
+        //urlString = "https://firebasestorage.googleapis.com/v0/b/piax-3136a.appspot.com/o/testJSON%20Hamburg.json?alt=media&token=7d7cb05c-22ff-4b2f-aff1-1c28175e0792"
+        urlString = "https://firebasestorage.googleapis.com/v0/b/piax-3136a.appspot.com/o/JSON%20Hamburg.json?alt=media&token=3914137c-59e3-42a5-a953-f9f80732165d"
+        
         
     // Trata URL
     if let url = URL(string: urlString) {
