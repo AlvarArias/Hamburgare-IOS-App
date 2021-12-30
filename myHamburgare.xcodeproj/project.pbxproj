@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		620FC634277CDE34008DBD4F /* myHamburg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC633277CDE34008DBD4F /* myHamburg.swift */; };
 		620FC636277DFBC7008DBD4F /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC635277DFBC7008DBD4F /* FavoriteViewController.swift */; };
+		620FC63D277E4650008DBD4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC63C277E4650008DBD4F /* ViewController.swift */; };
+		620FC63F277E475E008DBD4F /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC63E277E475E008DBD4F /* newViewController.swift */; };
+		620FC641277E4C13008DBD4F /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC640277E4C13008DBD4F /* myCollectionViewCell.swift */; };
+		620FC643277E5053008DBD4F /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC642277E5053008DBD4F /* homeCollectionViewCell.swift */; };
 		6297891E2769FF3600643D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6297891D2769FF3600643D50 /* GoogleService-Info.plist */; };
 		62978922276CA11C00643D50 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978921276CA11C00643D50 /* Petitions.swift */; };
 		62978924276CA12B00643D50 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978923276CA12B00643D50 /* Petition.swift */; };
 		62978926276CA26F00643D50 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978925276CA26F00643D50 /* TabViewController.swift */; };
 		629D8533277A125C009574B4 /* myTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D8532277A125C009574B4 /* myTableViewCell.swift */; };
-		629D8535277C5CB8009574B4 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D8534277C5CB8009574B4 /* CarouselCell.swift */; };
-		629D8537277C6231009574B4 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D8536277C6231009574B4 /* CarouselView.swift */; };
 		62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF66F0276789A300FF564B /* AppDelegate.swift */; };
 		62AF66F3276789A300FF564B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF66F2276789A300FF564B /* SceneDelegate.swift */; };
-		62AF66F5276789A300FF564B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF66F4276789A300FF564B /* ViewController.swift */; };
 		62AF66F8276789A300FF564B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF66F6276789A300FF564B /* Main.storyboard */; };
 		62AF66FA276789A700FF564B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62AF66F9276789A700FF564B /* Assets.xcassets */; };
 		62AF66FD276789A700FF564B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF66FB276789A700FF564B /* LaunchScreen.storyboard */; };
@@ -34,17 +35,18 @@
 /* Begin PBXFileReference section */
 		620FC633277CDE34008DBD4F /* myHamburg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myHamburg.swift; sourceTree = "<group>"; };
 		620FC635277DFBC7008DBD4F /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		620FC63C277E4650008DBD4F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		620FC63E277E475E008DBD4F /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
+		620FC640277E4C13008DBD4F /* myCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
+		620FC642277E5053008DBD4F /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
 		6297891D2769FF3600643D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62978921276CA11C00643D50 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
 		62978923276CA12B00643D50 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
 		62978925276CA26F00643D50 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		629D8532277A125C009574B4 /* myTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewCell.swift; sourceTree = "<group>"; };
-		629D8534277C5CB8009574B4 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
-		629D8536277C6231009574B4 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		62AF66ED276789A300FF564B /* myHamburgare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myHamburgare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AF66F0276789A300FF564B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62AF66F2276789A300FF564B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62AF66F4276789A300FF564B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62AF66F7276789A300FF564B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62AF66F9276789A700FF564B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62AF66FC276789A700FF564B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620FC639277E302C008DBD4F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				629D8532277A125C009574B4 /* myTableViewCell.swift */,
+				620FC640277E4C13008DBD4F /* myCollectionViewCell.swift */,
+				620FC642277E5053008DBD4F /* homeCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		62AF66E4276789A300FF564B = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +111,7 @@
 				62AF67552768A69300FF564B /* Model */,
 				62AF674C2768977C00FF564B /* View Controller */,
 				62AF66F6276789A300FF564B /* Main.storyboard */,
-				629D8532277A125C009574B4 /* myTableViewCell.swift */,
+				620FC639277E302C008DBD4F /* Cells */,
 				62AF66FB276789A700FF564B /* LaunchScreen.storyboard */,
 				62AF66F9276789A700FF564B /* Assets.xcassets */,
 				62AF674D276897A100FF564B /* Lottie animations */,
@@ -112,12 +124,13 @@
 		62AF674C2768977C00FF564B /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				62AF66F4276789A300FF564B /* ViewController.swift */,
+				620FC63C277E4650008DBD4F /* ViewController.swift */,
 				62AF67042767DD4400FF564B /* LaunchViewController.swift */,
 				62AF674E27689F2E00FF564B /* DescritionViewController.swift */,
 				62AF67462768972F00FF564B /* HomeViewController.swift */,
 				62978925276CA26F00643D50 /* TabViewController.swift */,
 				620FC635277DFBC7008DBD4F /* FavoriteViewController.swift */,
+				620FC63E277E475E008DBD4F /* newViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -136,8 +149,6 @@
 			children = (
 				62978921276CA11C00643D50 /* Petitions.swift */,
 				62978923276CA12B00643D50 /* Petition.swift */,
-				629D8534277C5CB8009574B4 /* CarouselCell.swift */,
-				629D8536277C6231009574B4 /* CarouselView.swift */,
 				620FC633277CDE34008DBD4F /* myHamburg.swift */,
 			);
 			path = Model;
@@ -280,18 +291,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				62978922276CA11C00643D50 /* Petitions.swift in Sources */,
-				629D8535277C5CB8009574B4 /* CarouselCell.swift in Sources */,
 				629D8533277A125C009574B4 /* myTableViewCell.swift in Sources */,
 				62978926276CA26F00643D50 /* TabViewController.swift in Sources */,
+				620FC643277E5053008DBD4F /* homeCollectionViewCell.swift in Sources */,
 				62AF67472768972F00FF564B /* HomeViewController.swift in Sources */,
-				62AF66F5276789A300FF564B /* ViewController.swift in Sources */,
 				62978924276CA12B00643D50 /* Petition.swift in Sources */,
 				620FC634277CDE34008DBD4F /* myHamburg.swift in Sources */,
+				620FC63D277E4650008DBD4F /* ViewController.swift in Sources */,
 				62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */,
 				62AF674F27689F2F00FF564B /* DescritionViewController.swift in Sources */,
 				620FC636277DFBC7008DBD4F /* FavoriteViewController.swift in Sources */,
-				629D8537277C6231009574B4 /* CarouselView.swift in Sources */,
 				62AF66F3276789A300FF564B /* SceneDelegate.swift in Sources */,
+				620FC63F277E475E008DBD4F /* newViewController.swift in Sources */,
+				620FC641277E4C13008DBD4F /* myCollectionViewCell.swift in Sources */,
 				62AF67052767DD4400FF564B /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
