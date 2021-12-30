@@ -12,4 +12,7 @@ class homeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var homeTextLabel: UILabel!
     
+    @IBOutlet weak var homeImage: UIImageView!
+    
+    
 }
