@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DescritionViewController: UIViewController {
     
@@ -50,10 +51,35 @@ class DescritionViewController: UIViewController {
             imgDescrip.load(url: myURL!)
         }
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         
-
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addHamburg))
    
+    }
+    
+    // Functions
+    @objc func addHamburg() {
+        let realm = try! Realm()
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+        //  Escribe en BD
+        var selecHamburg = theHamburg()
+        selecHamburg.myName = detailHamburgName
+        selecHamburg.myDescription = detailHamburgText
+        selecHamburg.myImage = urlSelectedImag
+        selecHamburg.myIngredients = listIngredients
+        selecHamburg.myPreparation = preparations
+        selecHamburg.myCalories = calorias
+        selecHamburg.myTime = tiempo
+        
+       
+
+        try! realm.write {
+            realm.add(selecHamburg)
+            print("sucess dta writed in database")
+            
+        }
+        
     }
     
     @objc func shareTapped() {

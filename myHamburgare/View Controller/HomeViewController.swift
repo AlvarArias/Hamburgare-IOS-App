@@ -9,13 +9,13 @@ import UIKit
 
 // new home 
 class HomeViewController: ViewController {
-
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       // load Home
+        
         
     
     }
@@ -27,6 +27,8 @@ class HomeViewController: ViewController {
     
     @IBAction func popularButtClick(_ sender: Any) {
     }
+       
+
     
     
 }
