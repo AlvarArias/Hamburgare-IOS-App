@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kYq-tx-VCe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yVX-aL-QhB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -23,8 +23,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3d-tE-sjM">
-                                <rect key="frame" x="132" y="698" width="150" height="50"/>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-A5-8dv" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="jYv-Mq-b3o"/>
+                                    <constraint firstAttribute="height" constant="400" id="ogX-4P-2GF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="samwich"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3d-tE-sjM">
+                                <rect key="frame" x="132" y="703" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4Bu-jS-RK8"/>
                                     <constraint firstAttribute="width" constant="150" id="K2h-ef-vs6"/>
@@ -47,19 +57,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Ffp-Wf-BZa" kind="show" id="hfw-QQ-Vyz"/>
+                                    <segue destination="Ffp-Wf-BZa" kind="show" id="76m-rG-WZf"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-A5-8dv" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="7" y="248" width="400" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="jYv-Mq-b3o"/>
-                                    <constraint firstAttribute="height" constant="400" id="ogX-4P-2GF"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="samwich"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,9 +78,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2604.3478260869565" y="91.741071428571431"/>
+            <point key="canvasLocation" x="4526.0869565217399" y="101.78571428571428"/>
         </scene>
-        <!--Hamburger-->
+        <!--Popular-->
         <scene sceneID="gb9-84-SUa">
             <objects>
                 <tableViewController id="ykm-z0-qNM" customClass="TabViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
@@ -121,13 +121,13 @@
                             <outlet property="delegate" destination="ykm-z0-qNM" id="jQg-Oa-MK2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Hamburger" id="rPG-CS-F3g"/>
+                    <navigationItem key="navigationItem" title="Popular" id="rPG-CS-F3g"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyO-ap-b52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4242" y="838"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="Zqr-xE-WzO">
             <objects>
                 <viewController id="Ffp-Wf-BZa" customClass="HomeViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
@@ -256,14 +256,14 @@
                             <constraint firstItem="ekH-mw-uWy" firstAttribute="top" secondItem="zYT-uh-LSG" secondAttribute="top" id="tSP-vf-nSl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3xo-us-mVu"/>
+                    <navigationItem key="navigationItem" title="Home" id="3xo-us-mVu"/>
                     <connections>
                         <outlet property="myCollecView" destination="GYv-hY-ClP" id="jkH-s4-im7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJl-BC-Wxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3686" y="92"/>
+            <point key="canvasLocation" x="5505.7971014492759" y="91.741071428571431"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="vBB-rK-jIh">
@@ -321,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcX-gg-aLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6708.6956521739139" y="92.410714285714278"/>
+            <point key="canvasLocation" x="8528.9855072463779" y="92.410714285714278"/>
         </scene>
         <!--Descrition View Controller-->
         <scene sceneID="O6q-ed-obq">
@@ -357,28 +357,47 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-py-lV0" userLabel="View Icons">
                                                 <rect key="frame" x="0.0" y="417" width="371" height="77"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-fire-48" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-8f-rzc">
-                                                        <rect key="frame" x="0.0" y="7" width="47" height="57"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-ye-CbQ">
-                                                        <rect key="frame" x="55" y="22" width="126" height="36"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-xF-gta">
-                                                        <rect key="frame" x="258" y="22" width="118" height="32"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-time-40" translatesAutoresizingMaskIntoConstraints="NO" id="AAz-Mk-RUC">
-                                                        <rect key="frame" x="189" y="13" width="51" height="51"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="cdD-IU-awu">
+                                                        <rect key="frame" x="0.0" y="-17" width="390" height="70"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-fire-48" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-8f-rzc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="70"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-ye-CbQ">
+                                                                <rect key="frame" x="61" y="0.0" width="90" height="70"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="90" id="JzJ-Xb-D1W"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-time-40" translatesAutoresizingMaskIntoConstraints="NO" id="AAz-Mk-RUC">
+                                                                <rect key="frame" x="164" y="0.0" width="40" height="70"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-xF-gta">
+                                                                <rect key="frame" x="217" y="0.0" width="90" height="70"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="sgd-Ib-tm3"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48L-JH-nN0">
+                                                                <rect key="frame" x="320" y="0.0" width="70" height="70"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="70" id="b5x-j1-Ov6"/>
+                                                                    <constraint firstAttribute="height" constant="70" id="qtk-Rz-qOA"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="icons8-heart-50"/>
+                                                                <connections>
+                                                                    <action selector="likeButton:" destination="4fg-8B-jWj" eventType="touchUpInside" id="5GZ-Yj-WkB"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" name="Amarillo"/>
                                                 <constraints>
@@ -404,6 +423,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-8q-6yl">
                                                         <rect key="frame" x="0.0" y="0.0" width="185.5" height="54"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="VAB-bx-Phu"/>
                                                             <constraint firstAttribute="width" constant="185.5" id="bKq-oZ-qvC"/>
                                                         </constraints>
                                                         <color key="tintColor" name="Border"/>
@@ -418,6 +438,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-El-zqp">
                                                         <rect key="frame" x="185.5" y="0.0" width="185.5" height="54"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Fe0-dZ-atw"/>
                                                             <constraint firstAttribute="width" constant="185.5" id="uLw-ak-0up"/>
                                                         </constraints>
                                                         <color key="tintColor" name="Border"/>
@@ -462,31 +483,14 @@
                         <outlet property="imgLeftShareBar" destination="TKk-8f-rzc" id="R5o-jw-HmK"/>
                         <outlet property="labCalories" destination="F5R-ye-CbQ" id="hk7-hx-jM9"/>
                         <outlet property="labTime" destination="Vu0-xF-gta" id="61X-Dy-qP7"/>
+                        <outlet property="likeButtonOutlet" destination="48L-JH-nN0" id="Ew0-uE-Y5C"/>
                         <outlet property="nameHamDescrip" destination="9Fk-xj-AwP" id="FdO-KG-lHX"/>
                         <outlet property="receptTextDesc" destination="ugD-ee-zoR" id="YeI-dh-sIY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-ZF-78R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4550.7246376811599" y="91.741071428571431"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="H0u-Hz-vJI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kYq-tx-VCe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7mf-ws-4Ga">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LG9-VL-PTm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qtw-T4-0Sd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1694.2028985507247" y="91.741071428571431"/>
+            <point key="canvasLocation" x="6371.0144927536239" y="91.741071428571431"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="OhP-zt-GFP">
@@ -529,7 +533,7 @@
                             <outlet property="delegate" destination="IgC-xj-ClS" id="m5r-dM-Klp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Hamburger" id="OjJ-UF-g5y" userLabel="Favorites"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="OjJ-UF-g5y" userLabel="Favorites"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4r-S5-JhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -551,7 +555,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBZ-lx-fZ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5800" y="92.410714285714278"/>
+            <point key="canvasLocation" x="7618.8405797101459" y="92.410714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7hF-Bp-0Cb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yVX-aL-QhB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="22U-gL-dPQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8qf-ct-LcT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dra-nV-gBA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3615.9420289855075" y="101.78571428571428"/>
         </scene>
     </scenes>
     <designables>
@@ -565,6 +587,7 @@
         <image name="Recipes-1" width="230" height="40"/>
         <image name="icons8-fire-48" width="48" height="48"/>
         <image name="icons8-heart-144" width="45" height="45"/>
+        <image name="icons8-heart-50" width="48" height="48"/>
         <image name="icons8-time-40" width="40" height="40"/>
         <namedColor name="Amarillo">
             <color red="0.99199998378753662" green="0.96100002527236938" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

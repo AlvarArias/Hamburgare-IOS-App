@@ -17,6 +17,7 @@ class DescritionViewController: UIViewController {
     var preparations = ""
     var calorias = ""
     var tiempo = ""
+    var state : Bool = true
 
     @IBOutlet weak var imgDescrip: UIImageView!
     
@@ -34,9 +35,12 @@ class DescritionViewController: UIViewController {
     
     @IBOutlet weak var labTime: UILabel!
     
+    @IBOutlet weak var likeButtonOutlet: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         nameHamDescrip.text = detailHamburgName
         receptTextDesc.text = detailHamburgText
@@ -51,14 +55,14 @@ class DescritionViewController: UIViewController {
             imgDescrip.load(url: myURL!)
         }
         
-        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addHamburg))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addHamburg))
    
     }
     
     // Functions
-    @objc func addHamburg() {
+    @objc func addHamburg(num: Int) {
         let realm = try! Realm()
         print(Realm.Configuration.defaultConfiguration.fileURL)
         
@@ -73,26 +77,53 @@ class DescritionViewController: UIViewController {
         selecHamburg.myTime = tiempo
         
        
-
-        try! realm.write {
-            realm.add(selecHamburg)
-            print("sucess dta writed in database")
+        if num == 1 {
+            try! realm.write {
+                realm.add(selecHamburg)
+                print("sucess to writed in database")
+            }
+            
+        } else {
+            return
+            }
             
         }
         
-    }
     
     @objc func shareTapped() {
         // Add imagen de la hamburguesa
-        /*guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else {
+        guard let image = imgDescrip.image?.jpegData(compressionQuality: 0.8) else {
             print("not image found")
             return
-        }*/
+        }
         
-        let vc = UIActivityViewController(activityItems: ["http://recept"], applicationActivities: [])
+         //let items: [Any] = [detailHamburgName, image]
+         
+        let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(vc, animated: true)
     }
+    
+    
+    @IBAction func likeButton(_ sender: Any) {
+        
+        if state {
+            likeButtonOutlet.setImage(UIImage(named: "icons8-heart-144"), for: .normal)
+            addHamburg(num: 1)
+            print("I liked")
+            state = false
+        } else {
+            likeButtonOutlet.setImage(UIImage(named: "icons8-heart-50"), for: .normal)
+            print("Now i dont liked")
+            state = true
+        }
+        
+       
+        
+    }
+    
+    
+    
 
     @IBAction func shareRecep(_ sender: Any) {
 
