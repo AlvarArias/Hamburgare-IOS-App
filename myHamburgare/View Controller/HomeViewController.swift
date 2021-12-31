@@ -96,6 +96,9 @@ class HomeViewController: ViewController {
          let mypetition = homepetitions[indexPath.row]
          //cell.homeTextLabel.text = myDataTest[indexPath.row]
          cell.homeTextLabel?.text = mypetition.name
+         cell.homeTextLabel.textColor = UIColor(red: 0.808, green: 0.349, blue: 0.247, alpha: 100.0)
+         
+         cell.homeImage.layer.cornerRadius = 20
          
          let myURL = URL(string: mypetition.image)
          //print(myURL)
@@ -108,6 +111,7 @@ class HomeViewController: ViewController {
                          if let image = UIImage(data: data) {
                              DispatchQueue.main.async {
                                  cell.homeImage.image = image
+                                 
                              }
                          }
                      }

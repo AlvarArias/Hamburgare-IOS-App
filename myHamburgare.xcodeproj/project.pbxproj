@@ -13,6 +13,7 @@
 		620FC63F277E475E008DBD4F /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC63E277E475E008DBD4F /* newViewController.swift */; };
 		620FC641277E4C13008DBD4F /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC640277E4C13008DBD4F /* myCollectionViewCell.swift */; };
 		620FC643277E5053008DBD4F /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FC642277E5053008DBD4F /* homeCollectionViewCell.swift */; };
+		620FC645277F0A70008DBD4F /* TektonPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 620FC644277F0A6F008DBD4F /* TektonPro-Bold.otf */; };
 		6297891E2769FF3600643D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6297891D2769FF3600643D50 /* GoogleService-Info.plist */; };
 		62978922276CA11C00643D50 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978921276CA11C00643D50 /* Petitions.swift */; };
 		62978924276CA12B00643D50 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978923276CA12B00643D50 /* Petition.swift */; };
@@ -39,6 +40,7 @@
 		620FC63E277E475E008DBD4F /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
 		620FC640277E4C13008DBD4F /* myCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
 		620FC642277E5053008DBD4F /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
+		620FC644277F0A6F008DBD4F /* TektonPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TektonPro-Bold.otf"; sourceTree = "<group>"; };
 		6297891D2769FF3600643D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62978921276CA11C00643D50 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
 		62978923276CA12B00643D50 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				620FC639277E302C008DBD4F /* Cells */,
 				62AF66FB276789A700FF564B /* LaunchScreen.storyboard */,
 				62AF66F9276789A700FF564B /* Assets.xcassets */,
+				620FC644277F0A6F008DBD4F /* TektonPro-Bold.otf */,
 				62AF674D276897A100FF564B /* Lottie animations */,
 				62AF66FE276789A700FF564B /* Info.plist */,
 				6297891D2769FF3600643D50 /* GoogleService-Info.plist */,
@@ -236,6 +239,7 @@
 				62AF67572768A70F00FF564B /* Notes.rtf in Resources */,
 				62AF66FD276789A700FF564B /* LaunchScreen.storyboard in Resources */,
 				62AF66FA276789A700FF564B /* Assets.xcassets in Resources */,
+				620FC645277F0A70008DBD4F /* TektonPro-Bold.otf in Resources */,
 				62AF66F8276789A300FF564B /* Main.storyboard in Resources */,
 				6297891E2769FF3600643D50 /* GoogleService-Info.plist in Resources */,
 			);

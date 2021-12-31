@@ -30,6 +30,8 @@ class TabViewController: UITableViewController {
             
             let mypetition = petitions[indexPath.row]
             cell.textLabel?.text = mypetition.name
+            cell.textLabel?.font = UIFont(name: "Tekton Pro", size: 15.0)
+            cell.textLabel?.textColor = UIColor(red: 0.808, green: 0.349, blue: 0.247, alpha: 100.0)
             cell.detailTextLabel?.text = mypetition.description
             /*
              @IBOutlet weak var myHambImg: UIView!

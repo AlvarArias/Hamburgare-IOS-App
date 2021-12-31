@@ -9,6 +9,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TektonPro-Bold.otf">
+            <string>TektonPro-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Launch View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -82,7 +87,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="h7n-ir-k1K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Amarillo"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="Atd-pW-Xfd" imageView="EqE-lX-m7Z" rowHeight="113" style="IBUITableViewCellStyleDefault" id="Zi9-GZ-mgy" customClass="myTableViewCell" customModule="myHamburgare" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="113"/>
@@ -92,19 +97,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Atd-pW-Xfd">
-                                            <rect key="frame" x="83" y="0.0" width="293.5" height="113"/>
+                                            <rect key="frame" x="178.5" y="0.0" width="198" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-star-144" id="EqE-lX-m7Z">
-                                            <rect key="frame" x="20" y="32.5" width="48" height="48"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Hamburg1-logo_ccexpress" id="EqE-lX-m7Z">
+                                            <rect key="frame" x="20" y="0.0" width="143.5" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" name="Amarillo"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Amarillo"/>
                                 <connections>
                                     <outlet property="myHambImg" destination="eO2-uJ-UJr" id="hf9-Jh-37i"/>
                                 </connections>
@@ -129,11 +135,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-mw-uWy">
-                                <rect key="frame" x="87" y="88" width="240" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-mw-uWy" userLabel="View Logo">
+                                <rect key="frame" x="50" y="88" width="314" height="110"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hamburg-logo" translatesAutoresizingMaskIntoConstraints="NO" id="1rl-nF-h9q">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hamburg1-logo_ccexpress" translatesAutoresizingMaskIntoConstraints="NO" id="1rl-nF-h9q">
                                         <rect key="frame" x="8" y="4" width="83" height="77"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -147,40 +152,55 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="Amarillo"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="KII-Cy-xJc"/>
+                                    <constraint firstAttribute="width" constant="314" id="aBy-AK-bxF"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-bk-QJ2">
-                                <rect key="frame" x="43" y="673" width="329" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-bk-QJ2" userLabel="View Buttons">
+                                <rect key="frame" x="42.5" y="673" width="329" height="150"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URW-r3-Zv6">
-                                        <rect key="frame" x="17" y="21" width="126" height="122"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="Boton Favorite"/>
-                                        <connections>
-                                            <action selector="favoriteButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="Raj-79-Rbm"/>
-                                            <segue destination="IgC-xj-ClS" kind="show" id="Wj0-K1-ngA"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v9-8Z-Y6P">
-                                        <rect key="frame" x="159" y="14" width="138" height="136"/>
+                                        <rect key="frame" x="191" y="8" width="138" height="136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="Boton Popular"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="Boton Popular">
+                                            <color key="baseForegroundColor" name="Amarillo"/>
+                                            <color key="baseBackgroundColor" name="Amarillo"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="popularButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="hnn-Ey-qj1"/>
                                             <segue destination="ykm-z0-qNM" kind="show" id="rlj-XL-lfO"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URW-r3-Zv6">
+                                        <rect key="frame" x="8" y="14" width="126" height="122"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="Boton Favorite">
+                                            <color key="baseForegroundColor" name="Amarillo"/>
+                                            <color key="baseBackgroundColor" name="Amarillo"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="favoriteButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="Raj-79-Rbm"/>
+                                            <segue destination="IgC-xj-ClS" kind="show" id="Wj0-K1-ngA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" name="Color Celeste"/>
+                                <color key="backgroundColor" name="Amarillo"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="AAg-oo-KnE"/>
+                                    <constraint firstAttribute="width" constant="329" id="mQW-5p-yL3"/>
+                                </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GYv-hY-ClP">
-                                <rect key="frame" x="9" y="217" width="395" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GYv-hY-ClP">
+                                <rect key="frame" x="10" y="217" width="394" height="304"/>
+                                <color key="backgroundColor" name="Amarillo"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GYv-hY-ClP" secondAttribute="height" multiplier="197:152" id="WKR-NN-vBP"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pG1-E6-ulI">
                                     <size key="itemSize" width="242" height="244"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -202,12 +222,12 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGu-ZR-BbY">
                                                     <rect key="frame" x="14" y="182" width="215" height="54"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.99607843139999996" green="0.8980392157" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="Amarillo"/>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="242" height="244"/>
                                         <connections>
@@ -223,7 +243,18 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zYT-uh-LSG"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Amarillo"/>
+                        <constraints>
+                            <constraint firstItem="Jbg-bk-QJ2" firstAttribute="top" secondItem="GYv-hY-ClP" secondAttribute="bottom" constant="152" id="3pC-Fb-J3p"/>
+                            <constraint firstItem="GYv-hY-ClP" firstAttribute="centerX" secondItem="ihK-b8-hP9" secondAttribute="centerX" id="Krl-Db-lP0"/>
+                            <constraint firstItem="GYv-hY-ClP" firstAttribute="leading" secondItem="zYT-uh-LSG" secondAttribute="leading" constant="10" id="ML4-BD-aMr"/>
+                            <constraint firstItem="GYv-hY-ClP" firstAttribute="top" secondItem="ekH-mw-uWy" secondAttribute="bottom" constant="19" id="OOP-pV-D8d"/>
+                            <constraint firstItem="Jbg-bk-QJ2" firstAttribute="centerX" secondItem="ihK-b8-hP9" secondAttribute="centerX" id="bFs-ah-gXY"/>
+                            <constraint firstItem="zYT-uh-LSG" firstAttribute="trailing" secondItem="GYv-hY-ClP" secondAttribute="trailing" constant="10" id="hPf-ZB-rL9"/>
+                            <constraint firstItem="ekH-mw-uWy" firstAttribute="centerX" secondItem="ihK-b8-hP9" secondAttribute="centerX" id="nei-CA-xap"/>
+                            <constraint firstItem="zYT-uh-LSG" firstAttribute="bottom" secondItem="Jbg-bk-QJ2" secondAttribute="bottom" constant="39" id="sqZ-GJ-Uli"/>
+                            <constraint firstItem="ekH-mw-uWy" firstAttribute="top" secondItem="zYT-uh-LSG" secondAttribute="top" id="tSP-vf-nSl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3xo-us-mVu"/>
                     <connections>
@@ -300,76 +331,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name hamburgare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fk-xj-AwP">
-                                <rect key="frame" x="98" y="77" width="194" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vxL-7u-oHa">
-                                <rect key="frame" x="47" y="119" width="320" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-py-lV0">
-                                <rect key="frame" x="20" y="462" width="384" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAQ-e9-cY2" userLabel="ViewMain">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-fire-48" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-8f-rzc">
-                                        <rect key="frame" x="0.0" y="7" width="47" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-ye-CbQ">
-                                        <rect key="frame" x="55" y="22" width="126" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-xF-gta">
-                                        <rect key="frame" x="258" y="22" width="118" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-time-40" translatesAutoresizingMaskIntoConstraints="NO" id="AAz-Mk-RUC">
-                                        <rect key="frame" x="189" y="13" width="51" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="bkT-kn-fxd">
+                                        <rect key="frame" x="1.5" y="19.5" width="371" height="779"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name hamburgare" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fk-xj-AwP">
+                                                <rect key="frame" x="0.0" y="0.0" width="371" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gKG-gl-o17"/>
+                                                    <constraint firstAttribute="width" constant="371" id="nAw-cJ-G3q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="20"/>
+                                                <color key="textColor" name="Border"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vxL-7u-oHa">
+                                                <rect key="frame" x="0.0" y="73" width="371" height="321"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="371" id="J6A-EO-QBV"/>
+                                                    <constraint firstAttribute="height" constant="321" id="cqU-pN-Jgz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-py-lV0" userLabel="View Icons">
+                                                <rect key="frame" x="0.0" y="417" width="371" height="77"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-fire-48" translatesAutoresizingMaskIntoConstraints="NO" id="TKk-8f-rzc">
+                                                        <rect key="frame" x="0.0" y="7" width="47" height="57"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-ye-CbQ">
+                                                        <rect key="frame" x="55" y="22" width="126" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-xF-gta">
+                                                        <rect key="frame" x="258" y="22" width="118" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-time-40" translatesAutoresizingMaskIntoConstraints="NO" id="AAz-Mk-RUC">
+                                                        <rect key="frame" x="189" y="13" width="51" height="51"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Amarillo"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="77" id="4as-fy-gVo"/>
+                                                    <constraint firstAttribute="width" constant="371" id="ux1-z0-53O"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-ee-zoR">
+                                                <rect key="frame" x="0.0" y="517" width="371" height="185"/>
+                                                <color key="backgroundColor" name="Amarillo"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="371" id="VFi-dH-zmL"/>
+                                                    <constraint firstAttribute="height" constant="185" id="VGH-zT-aW0"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hH7-p5-8dp">
+                                                <rect key="frame" x="0.0" y="725" width="371" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-8q-6yl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="54"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="185.5" id="bKq-oZ-qvC"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="Border"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Ingredienser">
+                                                            <fontDescription key="titleFontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttIngred:" destination="4fg-8B-jWj" eventType="touchUpInside" id="8EQ-87-mp9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-El-zqp">
+                                                        <rect key="frame" x="185.5" y="0.0" width="185.5" height="54"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="185.5" id="uLw-ak-0up"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="Border"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Gör så här">
+                                                            <fontDescription key="titleFontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="20"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="shareRecep:" destination="4fg-8B-jWj" eventType="touchUpInside" id="700-70-oct"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="371" id="HTH-cu-9Lj"/>
+                                                    <constraint firstAttribute="height" constant="54" id="kTm-hc-cQd"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Amarillo"/>
+                                <constraints>
+                                    <constraint firstItem="bkT-kn-fxd" firstAttribute="centerX" secondItem="lAQ-e9-cY2" secondAttribute="centerX" id="u61-gO-flB"/>
+                                    <constraint firstItem="bkT-kn-fxd" firstAttribute="centerY" secondItem="lAQ-e9-cY2" secondAttribute="centerY" id="wlE-fi-F0i"/>
+                                </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-ee-zoR">
-                                <rect key="frame" x="43" y="570" width="304" height="185"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-8q-6yl">
-                                <rect key="frame" x="43" y="779" width="125" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Ingredienser"/>
-                                <connections>
-                                    <action selector="buttIngred:" destination="4fg-8B-jWj" eventType="touchUpInside" id="8EQ-87-mp9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-El-zqp">
-                                <rect key="frame" x="214" y="779" width="133" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Gör så här"/>
-                                <connections>
-                                    <action selector="shareRecep:" destination="4fg-8B-jWj" eventType="touchUpInside" id="700-70-oct"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhX-gi-zQb"/>
-                        <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Amarillo"/>
+                        <constraints>
+                            <constraint firstItem="lAQ-e9-cY2" firstAttribute="top" secondItem="uhX-gi-zQb" secondAttribute="top" id="2Or-7e-1Sh"/>
+                            <constraint firstItem="lAQ-e9-cY2" firstAttribute="leading" secondItem="uhX-gi-zQb" secondAttribute="leading" constant="20" id="BkJ-aq-Ree"/>
+                            <constraint firstItem="uhX-gi-zQb" firstAttribute="trailing" secondItem="lAQ-e9-cY2" secondAttribute="trailing" constant="20" id="C5T-PO-E0f"/>
+                            <constraint firstItem="lAQ-e9-cY2" firstAttribute="bottom" secondItem="uhX-gi-zQb" secondAttribute="bottom" id="IQx-FY-9Gc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WiK-DS-xhT"/>
                     <connections>
@@ -385,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-ZF-78R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4551" y="92"/>
+            <point key="canvasLocation" x="4550.7246376811599" y="91.741071428571431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H0u-Hz-vJI">
@@ -405,14 +488,15 @@
             </objects>
             <point key="canvasLocation" x="1694.2028985507247" y="91.741071428571431"/>
         </scene>
-        <!--Hamburger-->
+        <!--Favorites-->
         <scene sceneID="OhP-zt-GFP">
             <objects>
-                <tableViewController id="IgC-xj-ClS" customClass="FavoriteViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Favorites" automaticallyAdjustsScrollViewInsets="NO" id="IgC-xj-ClS" userLabel="Favorites" customClass="FavoriteViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6gi-O4-nZm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Amarillo"/>
+                        <color key="separatorColor" name="Amarillo"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellFavorit" textLabel="0mW-Oa-mRf" imageView="ko2-hd-cCO" rowHeight="113" style="IBUITableViewCellStyleDefault" id="BLo-ac-GY1" customClass="myTableViewCell" customModule="myHamburgare" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="113"/>
@@ -434,7 +518,7 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Amarillo"/>
                                 <connections>
                                     <outlet property="myHambImg" destination="uyB-kl-BtL" id="N37-aG-wsf"/>
                                 </connections>
@@ -445,7 +529,7 @@
                             <outlet property="delegate" destination="IgC-xj-ClS" id="m5r-dM-Klp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Hamburger" id="OjJ-UF-g5y"/>
+                    <navigationItem key="navigationItem" title="Hamburger" id="OjJ-UF-g5y" userLabel="Favorites"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4r-S5-JhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -470,21 +554,23 @@
             <point key="canvasLocation" x="5800" y="92.410714285714278"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="E6B-A5-8dv"/>
+    </designables>
     <resources>
         <image name="Boton Favorite" width="118" height="114"/>
         <image name="Boton Popular" width="118" height="114"/>
-        <image name="Hamburg-logo" width="195" height="154"/>
+        <image name="Hamburg1-logo_ccexpress" width="195" height="154"/>
         <image name="Recipes" width="293" height="66"/>
         <image name="Recipes-1" width="230" height="40"/>
         <image name="icons8-fire-48" width="48" height="48"/>
         <image name="icons8-heart-144" width="45" height="45"/>
-        <image name="icons8-star-144" width="48" height="48"/>
         <image name="icons8-time-40" width="40" height="40"/>
         <namedColor name="Amarillo">
             <color red="0.99199998378753662" green="0.96100002527236938" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Color Celeste">
-            <color red="0.95294117647058818" green="0.96862745098039216" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Border">
+            <color red="0.80800000000000005" green="0.34899999999999998" blue="0.247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Color Naranja">
             <color red="0.97254901960784312" green="0.74901960784313726" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

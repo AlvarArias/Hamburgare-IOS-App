@@ -38,6 +38,9 @@ class FavoriteViewController: UITableViewController {
         let realm = try! Realm()
         let result = realm.objects(theHamburg.self)
         cell.textLabel?.text = result[indexPath.row].myName
+        cell.textLabel?.font = UIFont(name: "Tekton Pro", size: 15.0)
+        cell.textLabel?.textColor = UIColor(red: 0.808, green: 0.349, blue: 0.247, alpha: 100.0)
+
 
         return cell
     }
