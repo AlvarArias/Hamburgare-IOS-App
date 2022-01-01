@@ -26,7 +26,7 @@ class FavoriteViewController: UITableViewController {
         let realm = try! Realm()
         print(Realm.Configuration.defaultConfiguration.fileURL)
         // leer en BD
-        let result = realm.objects(theHamburg.self)
+        let result = realm.objects(theHamburg2.self)
       
         return result.count
         
@@ -36,7 +36,7 @@ class FavoriteViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellFavorit", for: indexPath)
         let realm = try! Realm()
-        let result = realm.objects(theHamburg.self)
+        let result = realm.objects(theHamburg2.self)
         cell.textLabel?.text = result[indexPath.row].myName
         cell.textLabel?.font = UIFont(name: "Tekton Pro", size: 15.0)
         cell.textLabel?.textColor = UIColor(red: 0.808, green: 0.349, blue: 0.247, alpha: 100.0)
@@ -56,7 +56,7 @@ class FavoriteViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             let realm = try! Realm()
-            let result = realm.objects(theHamburg.self)
+            let result = realm.objects(theHamburg2.self)
         
             try! realm.write {
                 realm.delete(result[indexPath.row])
@@ -71,7 +71,7 @@ class FavoriteViewController: UITableViewController {
             
             
              let realm = try! Realm()
-             let result = realm.objects(theHamburg.self)
+             let result = realm.objects(theHamburg2.self)
              
             vc.detailHamburgName = result[indexPath.row].myName!
             vc.detailHamburgText = result[indexPath.row].myDescription!
@@ -80,6 +80,7 @@ class FavoriteViewController: UITableViewController {
             vc.listIngredients = result[indexPath.row].myIngredients!
             vc.preparations = result[indexPath.row].myPreparation!
             vc.urlSelectedImag = result[indexPath.row].myImage!
+            vc.state = result[indexPath.row].mystatus!
             
             navigationController?.pushViewController(vc, animated: true)
         }

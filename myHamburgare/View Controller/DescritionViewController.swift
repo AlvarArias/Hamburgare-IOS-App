@@ -17,7 +17,8 @@ class DescritionViewController: UIViewController {
     var preparations = ""
     var calorias = ""
     var tiempo = ""
-    var state : Bool = true
+    var state = "false"
+
 
     @IBOutlet weak var imgDescrip: UIImageView!
     
@@ -59,6 +60,13 @@ class DescritionViewController: UIViewController {
         
         //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addHamburg))
    
+        if state == "true" {
+            likeButtonOutlet.setImage(UIImage(named: "icons8-heart-144"), for: .normal)
+            addHamburg(num: 1)
+            print("I liked")
+            state = "true"}
+        
+        
     }
     
     // Functions
@@ -67,7 +75,9 @@ class DescritionViewController: UIViewController {
         print(Realm.Configuration.defaultConfiguration.fileURL)
         
         //  Escribe en BD
-        var selecHamburg = theHamburg()
+        //var selecHamburg = theHamburg()
+        var selecHamburg = theHamburg2()
+        
         selecHamburg.myName = detailHamburgName
         selecHamburg.myDescription = detailHamburgText
         selecHamburg.myImage = urlSelectedImag
@@ -75,7 +85,7 @@ class DescritionViewController: UIViewController {
         selecHamburg.myPreparation = preparations
         selecHamburg.myCalories = calorias
         selecHamburg.myTime = tiempo
-        
+        selecHamburg.mystatus = state
        
         if num == 1 {
             try! realm.write {
@@ -107,15 +117,16 @@ class DescritionViewController: UIViewController {
     
     @IBAction func likeButton(_ sender: Any) {
         
-        if state {
+        if state == "false" {
             likeButtonOutlet.setImage(UIImage(named: "icons8-heart-144"), for: .normal)
+            state = "true"
             addHamburg(num: 1)
             print("I liked")
-            state = false
+            
         } else {
             likeButtonOutlet.setImage(UIImage(named: "icons8-heart-50"), for: .normal)
             print("Now i dont liked")
-            state = true
+            //state = true
         }
         
        

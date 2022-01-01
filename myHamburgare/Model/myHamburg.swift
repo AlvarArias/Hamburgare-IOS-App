@@ -38,6 +38,18 @@ class theHamburg : Object {
     @objc dynamic var myPreparation: String?
     @objc dynamic var myCalories: String?
     @objc dynamic var myTime: String?
-    
+
 }
 
+
+class theHamburg2 : Object {
+
+    @objc dynamic var myName: String?
+    @objc dynamic var myDescription: String?
+    @objc dynamic var myImage: String?
+    @objc dynamic var myIngredients: String?
+    @objc dynamic var myPreparation: String?
+    @objc dynamic var myCalories: String?
+    @objc dynamic var myTime: String?
+    @objc dynamic var mystatus: String?
+}
