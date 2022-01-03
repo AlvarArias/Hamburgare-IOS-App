@@ -88,9 +88,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Amarillo"/>
+                        <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="kES-pv-cc0">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="Atd-pW-Xfd" imageView="EqE-lX-m7Z" rowHeight="113" style="IBUITableViewCellStyleDefault" id="Zi9-GZ-mgy" customClass="myTableViewCell" customModule="myHamburgare" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="113"/>
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zi9-GZ-mgy" id="eO2-uJ-UJr">
                                     <rect key="frame" x="0.0" y="0.0" width="384.5" height="113"/>
@@ -122,6 +126,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Popular" id="rPG-CS-F3g"/>
+                    <connections>
+                        <outlet property="myIndicator" destination="kES-pv-cc0" id="0WV-fF-OXf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyO-ap-b52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -351,7 +358,7 @@
                                 <rect key="frame" x="0.0" y="74" width="414" height="788"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VmJ-7b-Rfb">
-                                        <rect key="frame" x="0.0" y="5" width="385" height="588"/>
+                                        <rect key="frame" x="0.0" y="5" width="385" height="608"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vxL-7u-oHa">
                                                 <rect key="frame" x="0.0" y="0.0" width="385" height="300"/>
@@ -361,10 +368,13 @@
                                                 </constraints>
                                             </imageView>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="TlN-OT-6Ic">
-                                                <rect key="frame" x="0.0" y="305" width="385" height="20"/>
+                                                <rect key="frame" x="0.0" y="305" width="385" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ofr-St-HFX"/>
+                                                </constraints>
                                             </activityIndicatorView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-py-lV0" userLabel="View Icons">
-                                                <rect key="frame" x="0.0" y="330" width="385" height="60"/>
+                                                <rect key="frame" x="0.0" y="350" width="385" height="60"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cdD-IU-awu">
                                                         <rect key="frame" x="40" y="0.0" width="305" height="62"/>
@@ -414,7 +424,7 @@
                                                 </constraints>
                                             </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-ee-zoR">
-                                                <rect key="frame" x="0.0" y="395" width="385" height="128"/>
+                                                <rect key="frame" x="0.0" y="415" width="385" height="128"/>
                                                 <color key="backgroundColor" name="Amarillo"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="MpV-Vc-77a"/>
@@ -425,7 +435,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="hH7-p5-8dp" userLabel="Stack View BUttons under">
-                                                <rect key="frame" x="0.0" y="528" width="385" height="60"/>
+                                                <rect key="frame" x="0.0" y="548" width="385" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-8q-6yl">
                                                         <rect key="frame" x="0.0" y="0.0" width="172.5" height="60"/>
@@ -491,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-ZF-78R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6369.5652173913049" y="91.071428571428569"/>
+            <point key="canvasLocation" x="6303" y="92"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="OhP-zt-GFP">

@@ -10,19 +10,14 @@ import UIKit
 // new home 
 class HomeViewController: ViewController {
     
-    var myDataTest = ["Hamburg 1","Hamburg 2","Hamburg 3"]
+    //var myDataTest = ["Hamburg 1","Hamburg 2","Hamburg 3"]
     
     var homepetitions = [Petition]()
     
-   
     @IBOutlet weak var myCollecView: UICollectionView!
-    
     
     @IBOutlet weak var myIndicator: UIActivityIndicatorView!
     
-    
-    //myHomeColl
-        
     override func viewDidLoad() {
         super.viewDidLoad()
 

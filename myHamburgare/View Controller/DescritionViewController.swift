@@ -58,15 +58,19 @@ class DescritionViewController: UIViewController {
         print(myURL)
         if (myURL != nil) {
             myIndicator.isHidden = true
-            /*
+        
             myIndicator.style = .large
             myIndicator.color = .red
             myIndicator.startAnimating()
-            */
+            
             imgDescrip.load(url: myURL!)
             
             if imgDescrip.load(url: myURL!) {
-             print("Image is loaded")
+             //print("Image is loaded")
+                DispatchQueue.main.async {
+                    self.myIndicator.stopAnimating()
+                    self.myIndicator.isHidden = true
+                }
             }
              
         }
@@ -91,7 +95,7 @@ class DescritionViewController: UIViewController {
         
         //  Escribe en BD
         //var selecHamburg = theHamburg()
-        var selecHamburg = theHamburg2()
+        let selecHamburg = theHamburg2()
         
         selecHamburg.myName = detailHamburgName
         selecHamburg.myDescription = detailHamburgText

@@ -13,16 +13,17 @@ class TabViewController:
     
     UITableViewController {
     
-    
-    @IBOutlet weak var myActivity: UIActivityIndicatorView!
-    
-    
+    @IBOutlet weak var myIndicator: UIActivityIndicatorView!
     
     var petitions = [Petition]()
         var myName: String = ""
 
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            myIndicator.style = .large
+            myIndicator.color = .red
+            myIndicator.startAnimating()
             
             performSelector(inBackground: #selector(fechJSON), with: nil)
         
@@ -92,10 +93,12 @@ class TabViewController:
     let decoder = JSONDecoder()
     
     if let jsonPetitions = try? decoder.decode(Petitions.self, from: json){
-            
+    
     petitions = jsonPetitions.results
         
         DispatchQueue.main.async {
+            self.myIndicator.stopAnimating()
+            self.myIndicator.isHidden = true
             self.tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)}
         
     } else {
