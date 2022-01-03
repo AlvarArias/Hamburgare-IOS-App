@@ -8,9 +8,17 @@
 import UIKit
 
 
-class TabViewController: UITableViewController {
-        
-        var petitions = [Petition]()
+class TabViewController:
+    
+    
+    UITableViewController {
+    
+    
+    @IBOutlet weak var myActivity: UIActivityIndicatorView!
+    
+    
+    
+    var petitions = [Petition]()
         var myName: String = ""
 
         override func viewDidLoad() {
@@ -84,8 +92,12 @@ class TabViewController: UITableViewController {
     let decoder = JSONDecoder()
     
     if let jsonPetitions = try? decoder.decode(Petitions.self, from: json){
+            
     petitions = jsonPetitions.results
-        tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
+        
+        DispatchQueue.main.async {
+            self.tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)}
+        
     } else {
     performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
     }

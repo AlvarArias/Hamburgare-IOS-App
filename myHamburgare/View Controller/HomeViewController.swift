@@ -18,6 +18,7 @@ class HomeViewController: ViewController {
     @IBOutlet weak var myCollecView: UICollectionView!
     
     
+    @IBOutlet weak var myIndicator: UIActivityIndicatorView!
     
     
     //myHomeColl
@@ -25,13 +26,17 @@ class HomeViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        myIndicator.style = .large
+        myIndicator.color = .red
+        myIndicator.startAnimating()
+      
         performSelector(inBackground: #selector(fechJSON), with: nil)
-        
-    
+      
     }
     
     
     @objc func fechJSON() {
+        
     let urlString: String
         //urlString = "https://firebasestorage.googleapis.com/v0/b/piax-3136a.appspot.com/o/testJSON%20Hamburg.json?alt=media&token=7d7cb05c-22ff-4b2f-aff1-1c28175e0792"
         urlString = "https://firebasestorage.googleapis.com/v0/b/piax-3136a.appspot.com/o/JSON%20Hamburg.json?alt=media&token=3914137c-59e3-42a5-a953-f9f80732165d"
@@ -52,8 +57,15 @@ class HomeViewController: ViewController {
     let decoder = JSONDecoder()
     
     if let jsonPetitions = try? decoder.decode(Petitions.self, from: json){
+        
+        DispatchQueue.main.async {
+            self.myIndicator.stopAnimating()
+            self.myIndicator.isHidden = true }
+        
     homepetitions = jsonPetitions.results
         myCollecView.performSelector(onMainThread: #selector(UICollectionView.reloadData), with: nil, waitUntilDone: false)
+        
+        
     } else {
     performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
     }

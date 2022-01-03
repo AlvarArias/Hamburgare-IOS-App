@@ -18,6 +18,7 @@ class DescritionViewController: UIViewController {
     var calorias = ""
     var tiempo = ""
     var state = "false"
+  
 
 
     @IBOutlet weak var imgDescrip: UIImageView!
@@ -38,12 +39,15 @@ class DescritionViewController: UIViewController {
     
     @IBOutlet weak var likeButtonOutlet: UIButton!
     
+    @IBOutlet weak var myIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = detailHamburgName
+        
         // Do any additional setup after loading the view.
-        nameHamDescrip.text = detailHamburgName
+        //nameHamDescrip.text = detailHamburgName
         receptTextDesc.text = detailHamburgText
         labCalories.text = calorias
         labTime.text = tiempo
@@ -53,7 +57,18 @@ class DescritionViewController: UIViewController {
         let myURL = URL(string: urlSelectedImag)
         print(myURL)
         if (myURL != nil) {
+            myIndicator.isHidden = true
+            /*
+            myIndicator.style = .large
+            myIndicator.color = .red
+            myIndicator.startAnimating()
+            */
             imgDescrip.load(url: myURL!)
+            
+            if imgDescrip.load(url: myURL!) {
+             print("Image is loaded")
+            }
+             
         }
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
@@ -166,7 +181,7 @@ class DescritionViewController: UIViewController {
 }
 
 extension UIImageView {
-    func load(url: URL) {
+    func load(url: URL) -> Bool {
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
@@ -176,5 +191,6 @@ extension UIImageView {
                 }
             }
         }
+        return true
     }
 }
