@@ -66,7 +66,7 @@
                         <constraints>
                             <constraint firstItem="E6B-A5-8dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EGX-Ax-XDI"/>
                             <constraint firstItem="E6B-A5-8dv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Isg-1F-smC"/>
-                            <constraint firstItem="K3d-tE-sjM" firstAttribute="top" secondItem="E6B-A5-8dv" secondAttribute="bottom" constant="25" id="clN-q1-gqd"/>
+                            <constraint firstItem="K3d-tE-sjM" firstAttribute="top" secondItem="E6B-A5-8dv" secondAttribute="bottom" constant="20" id="clN-q1-gqd"/>
                             <constraint firstItem="K3d-tE-sjM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x7q-YC-FpK"/>
                         </constraints>
                     </view>
@@ -430,19 +430,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vxL-7u-oHa">
-                                                <rect key="frame" x="15" y="20" width="385" height="300"/>
+                                                <rect key="frame" x="15" y="0.0" width="385" height="300"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vxL-7u-oHa" secondAttribute="height" multiplier="77:60" id="psJ-vd-Cq8"/>
                                                 </constraints>
                                             </imageView>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="TlN-OT-6Ic">
-                                                <rect key="frame" x="15" y="320" width="384" height="40"/>
+                                                <rect key="frame" x="15" y="300" width="384" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TlN-OT-6Ic" secondAttribute="height" multiplier="48:5" id="k9z-4i-Ame"/>
                                                 </constraints>
                                             </activityIndicatorView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-py-lV0" userLabel="View Icons">
-                                                <rect key="frame" x="10" y="357" width="394" height="61.5"/>
+                                                <rect key="frame" x="10" y="320" width="394" height="61.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cdD-IU-awu">
                                                         <rect key="frame" x="44.5" y="0.0" width="305" height="62"/>
@@ -495,10 +495,10 @@
                                                 </constraints>
                                             </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-ee-zoR">
-                                                <rect key="frame" x="15" y="433.5" width="385" height="186"/>
+                                                <rect key="frame" x="15" y="386.5" width="385" height="150"/>
                                                 <color key="backgroundColor" name="Amarillo"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="ugD-ee-zoR" secondAttribute="height" multiplier="385:186" id="gGC-Yg-ogS"/>
+                                                    <constraint firstAttribute="width" secondItem="ugD-ee-zoR" secondAttribute="height" multiplier="385:186" constant="74" id="gGC-Yg-ogS"/>
                                                 </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
@@ -506,14 +506,14 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="136" translatesAutoresizingMaskIntoConstraints="NO" id="hH7-p5-8dp" userLabel="Stack View BUttons under">
-                                                <rect key="frame" x="14" y="637.5" width="386" height="34"/>
+                                                <rect key="frame" x="14" y="590" width="386" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="NAR-Bv-D4G"/>
                                                     <constraint firstAttribute="width" secondItem="hH7-p5-8dp" secondAttribute="height" multiplier="193:17" id="tAU-49-n9p"/>
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSC-Pi-6nb" userLabel="View Buttons">
-                                                <rect key="frame" x="15" y="646" width="385" height="62"/>
+                                                <rect key="frame" x="15" y="537.5" width="385" height="62"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-8q-6yl">
                                                         <rect key="frame" x="8" y="8" width="125" height="37"/>
@@ -556,22 +556,22 @@
                                         </subviews>
                                         <color key="backgroundColor" name="Amarillo"/>
                                         <constraints>
-                                            <constraint firstItem="vxL-7u-oHa" firstAttribute="top" secondItem="lAQ-e9-cY2" secondAttribute="top" constant="20" id="8mz-DH-qwe"/>
+                                            <constraint firstItem="vxL-7u-oHa" firstAttribute="top" secondItem="lAQ-e9-cY2" secondAttribute="top" id="8mz-DH-qwe"/>
                                             <constraint firstAttribute="trailing" secondItem="TlN-OT-6Ic" secondAttribute="trailing" constant="15" id="E2J-28-jLL"/>
                                             <constraint firstItem="vxL-7u-oHa" firstAttribute="leading" secondItem="lAQ-e9-cY2" secondAttribute="leading" constant="15" id="EWn-2p-RIX"/>
                                             <constraint firstAttribute="trailing" secondItem="hH7-p5-8dp" secondAttribute="trailing" constant="14" id="Ib8-ky-8F9"/>
                                             <constraint firstItem="TlN-OT-6Ic" firstAttribute="leading" secondItem="lAQ-e9-cY2" secondAttribute="leading" constant="15" id="Ide-Wq-3pM"/>
                                             <constraint firstItem="hH7-p5-8dp" firstAttribute="leading" secondItem="lAQ-e9-cY2" secondAttribute="leading" constant="14" id="Ngn-e2-LkV"/>
                                             <constraint firstItem="PSC-Pi-6nb" firstAttribute="leading" secondItem="lAQ-e9-cY2" secondAttribute="leading" constant="15" id="P8e-od-IY7"/>
-                                            <constraint firstItem="ugD-ee-zoR" firstAttribute="top" secondItem="fSh-py-lV0" secondAttribute="bottom" constant="15" id="SAh-iS-5vC"/>
+                                            <constraint firstItem="ugD-ee-zoR" firstAttribute="top" secondItem="fSh-py-lV0" secondAttribute="bottom" constant="5" id="SAh-iS-5vC"/>
                                             <constraint firstItem="fSh-py-lV0" firstAttribute="leading" secondItem="lAQ-e9-cY2" secondAttribute="leading" constant="10" id="SoJ-Z1-2Qa"/>
                                             <constraint firstAttribute="height" constant="800" id="Vwf-nQ-ol5"/>
                                             <constraint firstAttribute="trailing" secondItem="fSh-py-lV0" secondAttribute="trailing" constant="10" id="Vya-vy-QXW"/>
                                             <constraint firstAttribute="trailing" secondItem="vxL-7u-oHa" secondAttribute="trailing" constant="14" id="XZW-SR-48d"/>
-                                            <constraint firstItem="hH7-p5-8dp" firstAttribute="top" secondItem="ugD-ee-zoR" secondAttribute="bottom" constant="18" id="j1a-7R-v8i"/>
+                                            <constraint firstItem="hH7-p5-8dp" firstAttribute="top" secondItem="ugD-ee-zoR" secondAttribute="bottom" constant="53.5" id="j1a-7R-v8i"/>
                                             <constraint firstItem="ugD-ee-zoR" firstAttribute="leading" secondItem="lAQ-e9-cY2" secondAttribute="leading" constant="15" id="kt9-2F-dlf"/>
-                                            <constraint firstItem="fSh-py-lV0" firstAttribute="top" secondItem="vxL-7u-oHa" secondAttribute="bottom" constant="37" id="osT-4G-CFJ"/>
-                                            <constraint firstItem="PSC-Pi-6nb" firstAttribute="top" secondItem="ugD-ee-zoR" secondAttribute="bottom" constant="26.5" id="tUf-By-6le"/>
+                                            <constraint firstItem="fSh-py-lV0" firstAttribute="top" secondItem="vxL-7u-oHa" secondAttribute="bottom" constant="20" id="osT-4G-CFJ"/>
+                                            <constraint firstItem="PSC-Pi-6nb" firstAttribute="top" secondItem="ugD-ee-zoR" secondAttribute="bottom" constant="1" id="tUf-By-6le"/>
                                             <constraint firstAttribute="trailing" secondItem="ugD-ee-zoR" secondAttribute="trailing" constant="14" id="w5u-0M-a0J"/>
                                             <constraint firstAttribute="trailing" secondItem="PSC-Pi-6nb" secondAttribute="trailing" constant="14" id="xil-PY-4Kh"/>
                                             <constraint firstItem="TlN-OT-6Ic" firstAttribute="top" secondItem="vxL-7u-oHa" secondAttribute="bottom" id="yh3-PV-b5Y"/>
