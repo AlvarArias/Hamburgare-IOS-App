@@ -19,6 +19,7 @@
 		62978924276CA12B00643D50 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978923276CA12B00643D50 /* Petition.swift */; };
 		62978926276CA26F00643D50 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62978925276CA26F00643D50 /* TabViewController.swift */; };
 		629D8533277A125C009574B4 /* myTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D8532277A125C009574B4 /* myTableViewCell.swift */; };
+		62A0A55327883984002CEB18 /* myPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A0A55227883981002CEB18 /* myPageViewController.swift */; };
 		62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF66F0276789A300FF564B /* AppDelegate.swift */; };
 		62AF66F3276789A300FF564B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF66F2276789A300FF564B /* SceneDelegate.swift */; };
 		62AF66F8276789A300FF564B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AF66F6276789A300FF564B /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		62978923276CA12B00643D50 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
 		62978925276CA26F00643D50 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		629D8532277A125C009574B4 /* myTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewCell.swift; sourceTree = "<group>"; };
+		62A0A55227883981002CEB18 /* myPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPageViewController.swift; sourceTree = "<group>"; };
 		62AF66ED276789A300FF564B /* myHamburgare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myHamburgare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AF66F0276789A300FF564B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62AF66F2276789A300FF564B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				62978925276CA26F00643D50 /* TabViewController.swift */,
 				620FC635277DFBC7008DBD4F /* FavoriteViewController.swift */,
 				620FC63E277E475E008DBD4F /* newViewController.swift */,
+				62A0A55227883981002CEB18 /* myPageViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				62AF67472768972F00FF564B /* HomeViewController.swift in Sources */,
 				62978924276CA12B00643D50 /* Petition.swift in Sources */,
 				620FC634277CDE34008DBD4F /* myHamburg.swift in Sources */,
+				62A0A55327883984002CEB18 /* myPageViewController.swift in Sources */,
 				620FC63D277E4650008DBD4F /* ViewController.swift in Sources */,
 				62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */,
 				62AF674F27689F2F00FF564B /* DescritionViewController.swift in Sources */,

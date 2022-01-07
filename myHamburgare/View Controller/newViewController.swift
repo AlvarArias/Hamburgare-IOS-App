@@ -9,7 +9,7 @@ import UIKit
 
 class newViewController: UIViewController {
     
-    var theData = ["Hamburg 1", "Hamburg 2", "Hamburg 3"]
+    var theData = ["Hamburg 1", "Hamburg 2", "Hamburg 3","Hamburg 4", "Hamburg 5", "Hamburg 6"]
 
     @IBOutlet weak var myCollec: UICollectionView!
     
@@ -17,6 +17,22 @@ class newViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    
+        let cellPadding = (myCollec.frame.width - 300) / 2
+        let carouselLayout = UICollectionViewFlowLayout()
+                carouselLayout.scrollDirection = .horizontal
+                
+                carouselLayout.sectionInset = .zero
+                
+                carouselLayout.itemSize = .init(width: 300, height: 400)
+                carouselLayout.sectionInset = .init(top: 0, left: cellPadding, bottom: 0, right: cellPadding)
+        carouselLayout.minimumLineSpacing = myCollec.frame.width - 300
+                myCollec.collectionViewLayout = carouselLayout
+    
+                
+                myCollec.reloadData()
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -54,5 +70,16 @@ extension newViewController : UICollectionViewDataSource {
         return cell
     }
     
-
 }
+
+extension newViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView,
+      didSelectItemAt indexPath: IndexPath) {
+            print("Selected")
+    }
+
+    
+}
+
+
