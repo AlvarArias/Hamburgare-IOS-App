@@ -1,19 +1,15 @@
 //
-//  TabViewController.swift
+//  HalsoTableView.swift
 //  myHamburgare
 //
-//  Created by Alvar Arias on 2021-12-17.
+//  Created by Alvar Arias on 2022-01-07.
 //
 
-import UIKit
+import Foundation
 
-
-class TabViewController:
+class HalsoTabViewController: UITableViewController {
     
-    
-    UITableViewController {
-    
-    @IBOutlet weak var myIndicator: UIActivityIndicatorView!
+    // @IBOutlet weak var myIndicator: UIActivityIndicatorView!
     
     var petitions = [Petition]()
         var myName: String = ""
@@ -23,9 +19,9 @@ class TabViewController:
             
             self.tableView.separatorStyle = .none
             
-            myIndicator.style = .large
-            myIndicator.color = .red
-            myIndicator.startAnimating()
+           // myIndicator.style = .large
+          //  myIndicator.color = .red
+          //  myIndicator.startAnimating()
             
             performSelector(inBackground: #selector(fechJSON), with: nil)
         

@@ -100,15 +100,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="384.5" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Atd-pW-Xfd">
-                                            <rect key="frame" x="178.5" y="0.0" width="198" height="113"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Atd-pW-Xfd">
+                                            <rect key="frame" x="89" y="0.0" width="287.5" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Hamburg1-logo_ccexpress" id="EqE-lX-m7Z">
-                                            <rect key="frame" x="20" y="0.0" width="143.5" height="113"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-cook-book-64" id="EqE-lX-m7Z">
+                                            <rect key="frame" x="20" y="29.5" width="54" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -132,7 +132,107 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyO-ap-b52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4242" y="838"/>
+            <point key="canvasLocation" x="4439" y="848"/>
+        </scene>
+        <!--Vegan-->
+        <scene sceneID="6iU-xL-J9D">
+            <objects>
+                <tableViewController storyboardIdentifier="VegoTable" id="Rqz-7V-okA" customClass="VegoViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="a4i-u0-Jt9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Amarillo"/>
+                        <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="Zwx-r4-SFm">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="vegan" textLabel="QxM-hU-h9a" imageView="7nX-wJ-cf3" rowHeight="113" style="IBUITableViewCellStyleDefault" id="i1y-VH-WjD">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="113"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i1y-VH-WjD" id="jH3-CU-OGA">
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="113"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QxM-hU-h9a">
+                                            <rect key="frame" x="81" y="0.0" width="295.5" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="vegan (1)" id="7nX-wJ-cf3">
+                                            <rect key="frame" x="20" y="33.5" width="46" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Amarillo"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Rqz-7V-okA" id="lJb-XD-bdo"/>
+                            <outlet property="delegate" destination="Rqz-7V-okA" id="iHm-vn-09m"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Vegan" id="kZj-5D-nX6"/>
+                    <connections>
+                        <outlet property="myIndicator" destination="Zwx-r4-SFm" id="lMl-kW-x6a"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFH-NK-YH0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5401" y="847"/>
+        </scene>
+        <!--Hälsosam-->
+        <scene sceneID="P6b-5u-urb">
+            <objects>
+                <tableViewController id="VQh-gf-Pjw" customClass="HalsoViewController" customModule="myHamburgare" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Qsz-ZF-hqW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Amarillo"/>
+                        <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="GO7-gL-aEm">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="halso" textLabel="EWx-yl-HGe" imageView="vhx-ux-kwM" rowHeight="113" style="IBUITableViewCellStyleDefault" id="LUR-Zb-eGa">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="113"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LUR-Zb-eGa" id="aNT-0g-TM8">
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="113"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWx-yl-HGe">
+                                            <rect key="frame" x="89" y="0.0" width="287.5" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="vegetable" id="vhx-ux-kwM">
+                                            <rect key="frame" x="20" y="29.5" width="54" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Amarillo"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VQh-gf-Pjw" id="J3f-vd-EN7"/>
+                            <outlet property="delegate" destination="VQh-gf-Pjw" id="Uaf-CE-sww"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Hälsosam" id="H0H-gV-Qpj"/>
+                    <connections>
+                        <outlet property="myIndicator" destination="GO7-gL-aEm" id="4go-S6-pZf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UzF-mt-44e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6286" y="844"/>
         </scene>
         <!--Home-->
         <scene sceneID="Zqr-xE-WzO">
@@ -143,7 +243,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-mw-uWy" userLabel="View Logo">
-                                <rect key="frame" x="50" y="88" width="314" height="110"/>
+                                <rect key="frame" x="50" y="88" width="314" height="81"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hamburg1-logo_ccexpress" translatesAutoresizingMaskIntoConstraints="NO" id="1rl-nF-h9q">
                                         <rect key="frame" x="8" y="4" width="83" height="77"/>
@@ -160,90 +260,44 @@
                                 </subviews>
                                 <color key="backgroundColor" name="Amarillo"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="KII-Cy-xJc"/>
-                                    <constraint firstAttribute="width" constant="314" id="aBy-AK-bxF"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-bk-QJ2" userLabel="View Buttons">
-                                <rect key="frame" x="42.5" y="697" width="329" height="150"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URW-r3-Zv6">
-                                        <rect key="frame" x="8" y="16" width="142" height="128"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="Boton Favorite">
-                                            <color key="baseForegroundColor" name="Amarillo"/>
-                                            <color key="baseBackgroundColor" name="Amarillo"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="favoriteButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="Raj-79-Rbm"/>
-                                            <segue destination="IgC-xj-ClS" kind="show" id="Wj0-K1-ngA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v9-8Z-Y6P">
-                                        <rect key="frame" x="191" y="12" width="138" height="136"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="138" id="Vtm-ng-tvV"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="Boton Popular">
-                                            <color key="baseForegroundColor" name="Amarillo"/>
-                                            <color key="baseBackgroundColor" name="Amarillo"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="popularButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="hnn-Ey-qj1"/>
-                                            <segue destination="ykm-z0-qNM" kind="show" id="rlj-XL-lfO"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="Amarillo"/>
-                                <constraints>
-                                    <constraint firstItem="URW-r3-Zv6" firstAttribute="leading" secondItem="Jbg-bk-QJ2" secondAttribute="leadingMargin" id="Cow-lI-2eH"/>
-                                    <constraint firstAttribute="bottom" secondItem="5v9-8Z-Y6P" secondAttribute="bottom" constant="2" id="IWD-vy-Dkz"/>
-                                    <constraint firstAttribute="trailing" secondItem="5v9-8Z-Y6P" secondAttribute="trailing" id="P12-ao-uvy"/>
-                                    <constraint firstItem="5v9-8Z-Y6P" firstAttribute="leading" secondItem="URW-r3-Zv6" secondAttribute="trailing" constant="41" id="b9y-m4-Elc"/>
-                                    <constraint firstItem="5v9-8Z-Y6P" firstAttribute="top" secondItem="Jbg-bk-QJ2" secondAttribute="top" constant="12" id="txv-Gm-hrp"/>
-                                    <constraint firstAttribute="width" secondItem="Jbg-bk-QJ2" secondAttribute="height" multiplier="329:150" id="ujG-qj-OOs"/>
-                                    <constraint firstItem="URW-r3-Zv6" firstAttribute="baseline" secondItem="5v9-8Z-Y6P" secondAttribute="baseline" id="wW7-Ji-eR2"/>
+                                    <constraint firstAttribute="width" secondItem="ekH-mw-uWy" secondAttribute="height" multiplier="157:55" constant="82.781818181818181" id="N62-aP-JV2"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GYv-hY-ClP">
-                                <rect key="frame" x="10" y="217" width="394" height="304"/>
+                                <rect key="frame" x="10" y="209" width="394" height="357"/>
                                 <color key="backgroundColor" name="Amarillo"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="GYv-hY-ClP" secondAttribute="height" multiplier="197:152" id="WKR-NN-vBP"/>
+                                    <constraint firstAttribute="width" secondItem="GYv-hY-ClP" secondAttribute="height" multiplier="197:152" constant="-68.69078947368422" id="bV3-9N-wBD"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pG1-E6-ulI">
-                                    <size key="itemSize" width="242" height="244"/>
+                                    <size key="itemSize" width="284" height="299"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myHomeColl" id="gCz-iO-rAd" customClass="homeCollectionViewCell" customModule="myHamburgare" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="30" width="242" height="244"/>
+                                        <rect key="frame" x="0.0" y="29" width="284" height="299"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gfJ-UX-Pfs">
-                                            <rect key="frame" x="0.0" y="0.0" width="242" height="244"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ia8-Af-AeY">
+                                            <rect key="frame" x="0.0" y="0.0" width="284" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-Xf-D4y">
-                                                    <rect key="frame" x="5" y="0.0" width="232" height="185"/>
+                                                    <rect key="frame" x="5" y="0.0" width="279" height="229"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGu-ZR-BbY">
-                                                    <rect key="frame" x="14" y="182" width="215" height="54"/>
+                                                    <rect key="frame" x="8" y="237" width="268" height="54"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" name="Amarillo"/>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" name="Amarillo"/>
-                                        <size key="customSize" width="242" height="244"/>
+                                        <size key="customSize" width="284" height="299"/>
                                         <connections>
                                             <outlet property="homeImage" destination="VOa-Xf-D4y" id="ONN-si-kQT"/>
                                             <outlet property="homeTextLabel" destination="zGu-ZR-BbY" id="JE1-db-SR4"/>
@@ -255,27 +309,135 @@
                                     <outlet property="delegate" destination="Ffp-Wf-BZa" id="XgP-Df-a2f"/>
                                 </connections>
                             </collectionView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="9fF-GU-cZl">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="9fF-GU-cZl">
                                 <rect key="frame" x="187" y="428" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="Ai6-ae-pqH"/>
-                                    <constraint firstAttribute="height" constant="40" id="ITf-tt-Eqv"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-bk-QJ2" userLabel="View Buttons inf">
+                                <rect key="frame" x="0.0" y="733" width="414" height="89"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="OGf-4W-xjZ">
+                                        <rect key="frame" x="8" y="0.0" width="397" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yDv-aR-AcF" userLabel="Stack View Popular">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v9-8Z-Y6P">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78" height="68"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="icons8-cook-book-64">
+                                                            <color key="baseForegroundColor" name="Amarillo"/>
+                                                            <color key="baseBackgroundColor" name="Amarillo"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="popularButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="hnn-Ey-qj1"/>
+                                                            <segue destination="ykm-z0-qNM" kind="show" identifier="popular" id="rlj-XL-lfO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrH-vQ-9kV" userLabel="Popular">
+                                                        <rect key="frame" x="0.0" y="68" width="78" height="12"/>
+                                                        <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="12"/>
+                                                        <color key="textColor" red="0.57647058819999997" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Ae-4M-Uyb" userLabel="Stack View Halso">
+                                                <rect key="frame" x="112" y="0.0" width="78" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXD-40-I96">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78" height="68"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="vegetable">
+                                                            <color key="baseForegroundColor" name="Amarillo"/>
+                                                            <color key="baseBackgroundColor" name="Amarillo"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="favoriteButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="fDb-fe-WfP"/>
+                                                            <segue destination="VQh-gf-Pjw" kind="show" identifier="Hälsosam" id="qax-jn-bTx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hälsosam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69V-pd-Du2">
+                                                        <rect key="frame" x="0.0" y="68" width="78" height="12"/>
+                                                        <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="12"/>
+                                                        <color key="textColor" red="0.57647058819999997" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E1c-rN-bsk" userLabel="Stack View Vegan">
+                                                <rect key="frame" x="224" y="0.0" width="70" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EH-63-U6J">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="68"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="vegan (1)">
+                                                            <color key="baseForegroundColor" name="Amarillo"/>
+                                                            <color key="baseBackgroundColor" name="Amarillo"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="popularButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="gqQ-aJ-xxe"/>
+                                                            <segue destination="Rqz-7V-okA" kind="show" id="SBf-e6-G5V"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58w-j5-1eG">
+                                                        <rect key="frame" x="0.0" y="68" width="70" height="12"/>
+                                                        <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="12"/>
+                                                        <color key="textColor" red="0.57647058819999997" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uXe-cG-jXb" userLabel="Stack View Favoriter">
+                                                <rect key="frame" x="328" y="0.0" width="69" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URW-r3-Zv6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="icons8-heart-144">
+                                                            <color key="baseForegroundColor" name="Amarillo"/>
+                                                            <color key="baseBackgroundColor" name="Amarillo"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="favoriteButtClick:" destination="Ffp-Wf-BZa" eventType="touchUpInside" id="Raj-79-Rbm"/>
+                                                            <segue destination="IgC-xj-ClS" kind="show" id="Wj0-K1-ngA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favoriter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4m-B5-d7C">
+                                                        <rect key="frame" x="0.0" y="69" width="69" height="11"/>
+                                                        <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="11"/>
+                                                        <color key="textColor" red="0.57647058819999997" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Amarillo"/>
+                                <constraints>
+                                    <constraint firstItem="OGf-4W-xjZ" firstAttribute="leading" secondItem="Jbg-bk-QJ2" secondAttribute="leading" constant="8" id="MLx-cU-xtG"/>
+                                    <constraint firstAttribute="trailing" secondItem="OGf-4W-xjZ" secondAttribute="trailing" constant="9" id="TQo-Z6-mzF"/>
+                                    <constraint firstAttribute="width" secondItem="Jbg-bk-QJ2" secondAttribute="height" multiplier="96:31" constant="138.38709677419354" id="poM-Qv-Zhj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zYT-uh-LSG"/>
                         <color key="backgroundColor" name="Amarillo"/>
                         <constraints>
-                            <constraint firstItem="Jbg-bk-QJ2" firstAttribute="centerX" secondItem="ihK-b8-hP9" secondAttribute="centerX" id="4ZP-CL-HpV"/>
-                            <constraint firstItem="9fF-GU-cZl" firstAttribute="centerX" secondItem="ihK-b8-hP9" secondAttribute="centerX" id="KY7-X5-cu4"/>
-                            <constraint firstItem="GYv-hY-ClP" firstAttribute="centerX" secondItem="ihK-b8-hP9" secondAttribute="centerX" id="Krl-Db-lP0"/>
-                            <constraint firstItem="GYv-hY-ClP" firstAttribute="leading" secondItem="zYT-uh-LSG" secondAttribute="leading" constant="10" id="ML4-BD-aMr"/>
-                            <constraint firstItem="GYv-hY-ClP" firstAttribute="top" secondItem="ekH-mw-uWy" secondAttribute="bottom" constant="19" id="OOP-pV-D8d"/>
-                            <constraint firstItem="zYT-uh-LSG" firstAttribute="bottom" secondItem="Jbg-bk-QJ2" secondAttribute="bottom" constant="15" id="Vcn-0H-CEw"/>
-                            <constraint firstItem="zYT-uh-LSG" firstAttribute="trailing" secondItem="GYv-hY-ClP" secondAttribute="trailing" constant="10" id="hPf-ZB-rL9"/>
-                            <constraint firstItem="9fF-GU-cZl" firstAttribute="centerY" secondItem="ihK-b8-hP9" secondAttribute="centerY" id="jHE-dQ-MMN"/>
-                            <constraint firstItem="ekH-mw-uWy" firstAttribute="centerX" secondItem="ihK-b8-hP9" secondAttribute="centerX" id="nei-CA-xap"/>
-                            <constraint firstItem="ekH-mw-uWy" firstAttribute="top" secondItem="zYT-uh-LSG" secondAttribute="top" id="tSP-vf-nSl"/>
+                            <constraint firstItem="Jbg-bk-QJ2" firstAttribute="leading" secondItem="zYT-uh-LSG" secondAttribute="leading" id="4mS-Jx-d24"/>
+                            <constraint firstItem="zYT-uh-LSG" firstAttribute="trailing" secondItem="Jbg-bk-QJ2" secondAttribute="trailing" id="8cV-RL-if0"/>
+                            <constraint firstAttribute="trailing" secondItem="GYv-hY-ClP" secondAttribute="trailing" constant="10" id="AP1-cg-yNj"/>
+                            <constraint firstItem="ekH-mw-uWy" firstAttribute="leading" secondItem="ihK-b8-hP9" secondAttribute="leadingMargin" constant="30" id="P65-9l-u8D"/>
+                            <constraint firstItem="ekH-mw-uWy" firstAttribute="top" secondItem="ihK-b8-hP9" secondAttribute="topMargin" id="PbK-bA-x1u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ekH-mw-uWy" secondAttribute="trailing" constant="30" id="VWU-0H-CCV"/>
+                            <constraint firstItem="GYv-hY-ClP" firstAttribute="leading" secondItem="ihK-b8-hP9" secondAttribute="leading" constant="10" id="tEB-0w-cEV"/>
+                            <constraint firstItem="zYT-uh-LSG" firstAttribute="bottom" secondItem="Jbg-bk-QJ2" secondAttribute="bottom" constant="40" id="wkL-ix-Krg"/>
+                            <constraint firstItem="GYv-hY-ClP" firstAttribute="top" secondItem="ekH-mw-uWy" secondAttribute="bottom" constant="40" id="zaI-W8-R7b"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="3xo-us-mVu"/>
@@ -706,7 +868,7 @@
         <scene sceneID="zim-C6-FEZ">
             <objects>
                 <viewController title="Description 2" id="Gfv-2b-K8G" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="yXX-Ai-Ok2">
+                    <view key="view" contentMode="scaleToFill" id="yXX-Ai-Ok2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -795,17 +957,18 @@
         <designable name="E6B-A5-8dv"/>
     </designables>
     <resources>
-        <image name="Boton Favorite" width="118" height="114"/>
-        <image name="Boton Popular" width="118" height="114"/>
         <image name="Hamburg1-logo_ccexpress" width="195" height="154"/>
         <image name="Recipes" width="293" height="66"/>
         <image name="Recipes-1" width="230" height="40"/>
         <image name="cooking" width="48" height="48"/>
+        <image name="icons8-cook-book-64" width="54" height="54"/>
         <image name="icons8-fire-48" width="48" height="48"/>
         <image name="icons8-heart-144" width="45" height="45"/>
         <image name="icons8-heart-50" width="48" height="48"/>
         <image name="icons8-time-40" width="40" height="40"/>
         <image name="recipe" width="48" height="48"/>
+        <image name="vegan (1)" width="46" height="46"/>
+        <image name="vegetable" width="54" height="54"/>
         <namedColor name="Amarillo">
             <color red="0.99199998378753662" green="0.96100002527236938" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

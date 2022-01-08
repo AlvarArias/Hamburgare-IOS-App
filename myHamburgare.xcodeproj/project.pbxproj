@@ -31,6 +31,9 @@
 		62AF67472768972F00FF564B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF67462768972F00FF564B /* HomeViewController.swift */; };
 		62AF674F27689F2F00FF564B /* DescritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF674E27689F2E00FF564B /* DescritionViewController.swift */; };
 		62AF67572768A70F00FF564B /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 62AF67562768A70F00FF564B /* Notes.rtf */; };
+		62FAE6FE2788FCC1002DC071 /* VegoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FAE6FD2788FCC1002DC071 /* VegoTableViewController.swift */; };
+		62FAE7022788FE06002DC071 /* HalsoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FAE7012788FE05002DC071 /* HalsoViewController.swift */; };
+		62FAE7042789128E002DC071 /* VegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FAE7032789128D002DC071 /* VegoViewController.swift */; };
 		94EF1415AAD03B2416218C28 /* Pods_myHamburgare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		62AF67462768972F00FF564B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		62AF674E27689F2E00FF564B /* DescritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescritionViewController.swift; sourceTree = "<group>"; };
 		62AF67562768A70F00FF564B /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		62FAE6FD2788FCC1002DC071 /* VegoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegoTableViewController.swift; sourceTree = "<group>"; };
+		62FAE7012788FE05002DC071 /* HalsoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalsoViewController.swift; sourceTree = "<group>"; };
+		62FAE7032789128D002DC071 /* VegoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegoViewController.swift; sourceTree = "<group>"; };
 		7FB79569F1979530B621FFF5 /* Pods-myHamburgare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myHamburgare.release.xcconfig"; path = "Target Support Files/Pods-myHamburgare/Pods-myHamburgare.release.xcconfig"; sourceTree = "<group>"; };
 		A42DDFB134028693EDBBFBEE /* Pods_myHamburgare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myHamburgare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE99E87BA6E80CACC25E87EE /* Pods-myHamburgare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myHamburgare.debug.xcconfig"; path = "Target Support Files/Pods-myHamburgare/Pods-myHamburgare.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,9 +140,12 @@
 				62AF674E27689F2E00FF564B /* DescritionViewController.swift */,
 				62AF67462768972F00FF564B /* HomeViewController.swift */,
 				62978925276CA26F00643D50 /* TabViewController.swift */,
+				62FAE6FD2788FCC1002DC071 /* VegoTableViewController.swift */,
 				620FC635277DFBC7008DBD4F /* FavoriteViewController.swift */,
 				620FC63E277E475E008DBD4F /* newViewController.swift */,
 				62A0A55227883981002CEB18 /* myPageViewController.swift */,
+				62FAE7012788FE05002DC071 /* HalsoViewController.swift */,
+				62FAE7032789128D002DC071 /* VegoViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -297,18 +306,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FAE7022788FE06002DC071 /* HalsoViewController.swift in Sources */,
 				62978922276CA11C00643D50 /* Petitions.swift in Sources */,
 				629D8533277A125C009574B4 /* myTableViewCell.swift in Sources */,
 				62978926276CA26F00643D50 /* TabViewController.swift in Sources */,
 				620FC643277E5053008DBD4F /* homeCollectionViewCell.swift in Sources */,
 				62AF67472768972F00FF564B /* HomeViewController.swift in Sources */,
 				62978924276CA12B00643D50 /* Petition.swift in Sources */,
+				62FAE6FE2788FCC1002DC071 /* VegoTableViewController.swift in Sources */,
 				620FC634277CDE34008DBD4F /* myHamburg.swift in Sources */,
 				62A0A55327883984002CEB18 /* myPageViewController.swift in Sources */,
 				620FC63D277E4650008DBD4F /* ViewController.swift in Sources */,
 				62AF66F1276789A300FF564B /* AppDelegate.swift in Sources */,
 				62AF674F27689F2F00FF564B /* DescritionViewController.swift in Sources */,
 				620FC636277DFBC7008DBD4F /* FavoriteViewController.swift in Sources */,
+				62FAE7042789128E002DC071 /* VegoViewController.swift in Sources */,
 				62AF66F3276789A300FF564B /* SceneDelegate.swift in Sources */,
 				620FC63F277E475E008DBD4F /* newViewController.swift in Sources */,
 				620FC641277E4C13008DBD4F /* myCollectionViewCell.swift in Sources */,

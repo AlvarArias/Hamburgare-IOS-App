@@ -44,7 +44,18 @@ class DescritionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = detailHamburgName
+        let label = UILabel()
+        label.backgroundColor = .clear
+        label.numberOfLines = 2
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        label.textAlignment = .center
+        label.textColor = .black
+        label.text = detailHamburgName
+        self.navigationItem.titleView = label
+        
+        
+        //self.title = detailHamburgName
+        
         
         // Do any additional setup after loading the view.
         //nameHamDescrip.text = detailHamburgName
