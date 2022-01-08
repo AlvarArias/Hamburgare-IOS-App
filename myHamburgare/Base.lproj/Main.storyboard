@@ -33,18 +33,19 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="samwich"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3d-tE-sjM">
-                                <rect key="frame" x="132" y="703" width="150" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3d-tE-sjM">
+                                <rect key="frame" x="132" y="747" width="160" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4Bu-jS-RK8"/>
-                                    <constraint firstAttribute="width" constant="150" id="K2h-ef-vs6"/>
+                                    <constraint firstAttribute="height" constant="35" id="4Bu-jS-RK8"/>
+                                    <constraint firstAttribute="width" constant="160" id="K2h-ef-vs6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" name="Color Naranja"/>
-                                        <color key="strokeColor" name="Color Naranja"/>
+                                    <backgroundConfiguration key="background" cornerRadius="43">
+                                        <color key="backgroundColor" name="Border"/>
+                                        <color key="strokeColor" name="Border"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="18"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -60,14 +61,26 @@
                                     <segue destination="Ffp-Wf-BZa" kind="show" id="76m-rG-WZf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Det är enkelt att göra egna fiskburgare! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX8-Xi-yWp">
+                                <rect key="frame" x="27" y="88" width="360" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WX8-Xi-yWp" secondAttribute="height" multiplier="30:7" id="rnu-ni-qhk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TektonPro-Bold" family="Tekton Pro" pointSize="18"/>
+                                <color key="textColor" red="0.57647058819999997" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Amarillo"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WX8-Xi-yWp" secondAttribute="trailing" constant="27" id="EAC-hD-vbD"/>
                             <constraint firstItem="E6B-A5-8dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EGX-Ax-XDI"/>
+                            <constraint firstItem="WX8-Xi-yWp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ffm-5O-hzK"/>
                             <constraint firstItem="E6B-A5-8dv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Isg-1F-smC"/>
-                            <constraint firstItem="K3d-tE-sjM" firstAttribute="top" secondItem="E6B-A5-8dv" secondAttribute="bottom" constant="20" id="clN-q1-gqd"/>
-                            <constraint firstItem="K3d-tE-sjM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x7q-YC-FpK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K3d-tE-sjM" secondAttribute="bottom" constant="80" id="Yxq-Fh-Wh9"/>
+                            <constraint firstItem="WX8-Xi-yWp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="jBB-vg-6Th"/>
+                            <constraint firstItem="K3d-tE-sjM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5" id="x7q-YC-FpK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rd4-fZ-gFD"/>
@@ -107,7 +120,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icons8-cook-book-64" id="EqE-lX-m7Z">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="burger" id="EqE-lX-m7Z">
                                             <rect key="frame" x="20" y="29.5" width="54" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -326,7 +339,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="78" height="68"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" image="icons8-cook-book-64">
+                                                        <buttonConfiguration key="configuration" style="filled" image="burger">
                                                             <color key="baseForegroundColor" name="Amarillo"/>
                                                             <color key="baseBackgroundColor" name="Amarillo"/>
                                                         </buttonConfiguration>
@@ -960,8 +973,8 @@
         <image name="Hamburg1-logo_ccexpress" width="195" height="154"/>
         <image name="Recipes" width="293" height="66"/>
         <image name="Recipes-1" width="230" height="40"/>
+        <image name="burger" width="54" height="54"/>
         <image name="cooking" width="48" height="48"/>
-        <image name="icons8-cook-book-64" width="54" height="54"/>
         <image name="icons8-fire-48" width="48" height="48"/>
         <image name="icons8-heart-144" width="45" height="45"/>
         <image name="icons8-heart-50" width="48" height="48"/>
@@ -974,9 +987,6 @@
         </namedColor>
         <namedColor name="Border">
             <color red="0.80800002813339233" green="0.34900000691413879" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Color Naranja">
-            <color red="0.97254901960784312" green="0.74901960784313726" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Fill">
             <color red="0.99199998378753662" green="0.83099997043609619" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

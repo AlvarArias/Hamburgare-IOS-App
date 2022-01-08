@@ -24,10 +24,6 @@ class LaunchViewController: UIViewController {
         animationView!.play()
         
         
-        
-        
-        
-        
     }
     
 
