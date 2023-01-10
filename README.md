@@ -4,7 +4,7 @@
 
 - IOS UIKit 
 - Realm integration
-- JSON API with hamburger conten
+- JSON API with hamburger content (text and images)
 
 ## App screenshots
 
